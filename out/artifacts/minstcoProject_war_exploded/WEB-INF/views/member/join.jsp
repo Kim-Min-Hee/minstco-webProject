@@ -12,7 +12,7 @@
 </head>
 <body>
 <div class="wrapper">
-    <form id="join_form" method="post">
+    <form id="join" method="post">
         <div class="wrap">
             <div class="subject">
                 <spa>회원가입</spa>
@@ -42,8 +42,7 @@
                 </div>
             </div>
             <div class="join_button_wrap">
-                <input type="button" class="join_button" value="가입하기" onclick="let member;
-                member/joinTest">
+                <input type="button" class="join_button" value="가입하기" onclick='location.href="/member/joinTest"'>
 
             </div>
         </div>

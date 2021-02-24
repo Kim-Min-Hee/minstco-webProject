@@ -19,10 +19,9 @@ public ModelAndView memberWrite(){
         System.out.println("@@@@");
     return modelAndView;
 }
-@RequestMapping(value = "/member/join",method = RequestMethod.POST)
-public ModelAndView memberInsert(MemberVO memberVO) throws Exception{
+@RequestMapping(value = "/member/joinTest",method = RequestMethod.GET)
+public ModelAndView memberInsert(){
         ModelAndView modelAndView = new ModelAndView();
-    System.out.println(toString());
         modelAndView.setViewName("/member/joinTest");
     return modelAndView;
 }

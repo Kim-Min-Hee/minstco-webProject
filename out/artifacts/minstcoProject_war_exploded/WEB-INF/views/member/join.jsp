@@ -11,8 +11,14 @@
     <title>member Join Page</title>
 </head>
 <body>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<html>
+<head>
+    <title>member Join Page</title>
+</head>
+<body>
 <div class="wrapper">
-    <form action="join" method="post">
+    <form action="/member/joinTest" method="post">
         <div class="wrap">
             <div class="subject">
                 <spa>회원가입</spa>
@@ -20,39 +26,31 @@
             <div class="id_wrap">
                 <div class="id_name">아이디</div>
                 <div class="id_input_box">
-                    <input class="id_input">
+                    <input class="id_input" name="id">
                 </div>
             </div>
             <div class="password_wrap">
                 <div class="password_name">비밀번호</div>
                 <div class="password_input_box">
-                    <input class="password_input">
+                    <input class="password_input" name="password">
                 </div>
             </div>
             <div class="user_wrap">
                 <div class="user_name">이름</div>
                 <div class="user_input_box">
-                    <input class="user_input">
+                    <input class="user_input" name="name">
                 </div>
             </div>
             <div class="phoneNumber_wrap">
                 <div class="phoneNumber_name">휴대폰번호</div>
                 <div class="phoneNumber_input_box">
-                    <input class="phoneNumber_input">
+                    <input class="phoneNumber_input" name="phoneNumber">
                 </div>
             </div>
         </div>
         <button type="submit">가입하기</button>
     </form>
 </div>
-<%
-    request.setCharacterEncoding("UTF-8");
-
-    String id = request.getParameter("id");
-    String password = request.getParameter("password");
-    String name = request.getParameter("name");
-    String phoneNumber = request.getParameter("phoneNumber");
-
-%>
 </body>
 </html>
+

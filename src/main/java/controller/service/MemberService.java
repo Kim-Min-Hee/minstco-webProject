@@ -1,28 +1,21 @@
 package controller.service;
 
-public class MemberService {
+import controller.dao.MemberDAO;
+import controller.vo.MemberVO;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
-//    private static MemberService service = new MemberService() {
-//
-//        public static MemberService getInstance() {
-//            return service;
-//        }
-//
-//        @Override
-//        public void memberInsert(MemberVO memberVO) {
-//            dao.insertMember(memberVO);
-//        }
-//
-////        @Override
-////        public MemberVO memberSearch(String id) {
-////            MemberVO memberVO = dao.memberSeach(id);
-////            return memberVO;
-////        }
-//    };
-//    public MemberDAO dao = MemberDAO.getInstance();
-//
-//    private MemberService(){}
+import java.util.List;
 
+@Service
+public class MemberService implements IMemberService{
 
+    @Autowired
+    MemberDAO memberDAO;
 
+    @Override
+    public List<MemberVO> getMember() {
+        System.out.println("!@#$%^");
+        return memberDAO.getMember();
+    }
 }

@@ -38,8 +38,4 @@ public class MemberVO {
     public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
-    @Override
-    public String toString(){
-        return "id"+id+"password"+password+"name"+name+"phoneNumber"+phoneNumber;
-    }
 }

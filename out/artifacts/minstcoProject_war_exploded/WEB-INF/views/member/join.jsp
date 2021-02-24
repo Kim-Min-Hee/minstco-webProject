@@ -12,7 +12,7 @@
 </head>
 <body>
 <div class="wrapper">
-    <form id="join" method="post">
+    <form action="join" method="post">
         <div class="wrap">
             <div class="subject">
                 <spa>회원가입</spa>
@@ -41,13 +41,18 @@
                     <input class="phoneNumber_input">
                 </div>
             </div>
-            <div class="join_button_wrap">
-                <input type="button" class="join_button" value="가입하기" onclick='location.href="/member/joinTest"'>
-
-            </div>
         </div>
+        <button type="submit">가입하기</button>
     </form>
 </div>
+<%
+    request.setCharacterEncoding("UTF-8");
 
+    String id = request.getParameter("id");
+    String password = request.getParameter("password");
+    String name = request.getParameter("name");
+    String phoneNumber = request.getParameter("phoneNumber");
+
+%>
 </body>
 </html>

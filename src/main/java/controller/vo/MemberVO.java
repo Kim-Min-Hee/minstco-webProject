@@ -1,4 +1,4 @@
-package controller.member;
+package controller.vo;
 
 public class MemberVO {
 

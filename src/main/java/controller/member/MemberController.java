@@ -16,6 +16,7 @@ public class MemberController  {
 public ModelAndView memberWrite(){
     ModelAndView modelAndView = new ModelAndView();
     modelAndView.setViewName("member/join");
+        System.out.println("@@@@");
     return modelAndView;
 }
 @RequestMapping(value = "/member/join",method = RequestMethod.POST)

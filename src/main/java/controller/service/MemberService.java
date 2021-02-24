@@ -1,11 +1,28 @@
 package controller.service;
 
-import controller.member.MemberVO;
+public class MemberService {
 
-public interface MemberService {
+//    private static MemberService service = new MemberService() {
+//
+//        public static MemberService getInstance() {
+//            return service;
+//        }
+//
+//        @Override
+//        public void memberInsert(MemberVO memberVO) {
+//            dao.insertMember(memberVO);
+//        }
+//
+////        @Override
+////        public MemberVO memberSearch(String id) {
+////            MemberVO memberVO = dao.memberSeach(id);
+////            return memberVO;
+////        }
+//    };
+//    public MemberDAO dao = MemberDAO.getInstance();
+//
+//    private MemberService(){}
 
-    public void memberJoin(MemberVO memberVO) throws Exception;
 
-    public MemberVO memberLogin(MemberVO memberVO) throws Exception;
 
 }

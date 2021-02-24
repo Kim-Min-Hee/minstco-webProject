@@ -5,8 +5,6 @@ public class MemberVO {
     private String id;
     private String password;
     private String name;
-    private String email;
-    private String address;
     private String phoneNumber;
 
     public String getId() {
@@ -19,14 +17,6 @@ public class MemberVO {
 
     public String getName() {
         return name;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public String getAddress() {
-        return address;
     }
 
     public String getPhoneNumber() {
@@ -45,19 +35,11 @@ public class MemberVO {
         this.name = name;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public void setAddress(String address) {
-        this.address = address;
-    }
-
     public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
     @Override
     public String toString(){
-        return "id"+id+"password"+password+"name"+name+"email"+email+"address"+address+"phoneNumber"+phoneNumber;
+        return "id"+id+"password"+password+"name"+name+"phoneNumber"+phoneNumber;
     }
 }

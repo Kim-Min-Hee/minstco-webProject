@@ -42,19 +42,13 @@
                 </div>
             </div>
             <div class="join_button_wrap">
-                <input type="button" class="join_button" value="가입하기">
+                <input type="button" class="join_button" value="가입하기" onclick="let member;
+                member/joinTest">
+
             </div>
         </div>
     </form>
 </div>
-<script>
-    $(".join_button").click(function(){
-
-        $("#join_form").attr("action", "/member/joinTest.do");
-        $("#join_form").submit();
-
-    });
-</script>
 
 </body>
 </html>

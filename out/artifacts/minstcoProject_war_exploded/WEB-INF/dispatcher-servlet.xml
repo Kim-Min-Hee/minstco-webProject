@@ -18,4 +18,14 @@
         <property name="suffix" value=".jsp"/>
     </bean>
 
+<!--    <bean class="org.springframework.web.servlet.handler.simpleUrlHandlerMapping">-->
+<!--        <property name="mappings">-->
+<!--            <props>-->
+<!--                <prop key="join.do">join</prop>-->
+<!--            </props>-->
+
+<!--        </property>-->
+<!--    </bean>-->
+<!--    <bean id="join" class="controller.member.MemberInsertController"/>-->
+
 </beans>

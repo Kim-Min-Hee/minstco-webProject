@@ -8,6 +8,29 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:github" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="225d4b0a-d073-4717-92e3-a1d1fbf00ea3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../.metadata/.log" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.log" afterDir="false" />
@@ -212,6 +235,37 @@
       <change beforePath="$PROJECT_DIR$/../minstco/src/app/Minstco.java" beforeDir="false" afterPath="$PROJECT_DIR$/../minstco/src/app/Minstco.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../minstco/src/service/Registration.java" beforeDir="false" afterPath="$PROJECT_DIR$/../minstco/src/service/Registration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../minstco/src/vo/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/../minstco/src/vo/Member.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/minstcoProject_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/minstcoProject_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/minstcoProject_war_exploded/WEB-INF/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/minstcoProject_war_exploded/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/minstcoProject_war_exploded/WEB-INF/classes/controller/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/minstcoProject_war_exploded/WEB-INF/classes/controller/Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/minstcoProject_war_exploded/WEB-INF/classes/controller/HttpUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/minstcoProject_war_exploded/WEB-INF/classes/controller/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/minstcoProject_war_exploded/WEB-INF/classes/controller/MainController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/minstcoProject_war_exploded/WEB-INF/classes/controller/dao/MemberDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/minstcoProject_war_exploded/WEB-INF/classes/controller/member/MemberController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/minstcoProject_war_exploded/WEB-INF/classes/controller/member/MemberController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/minstcoProject_war_exploded/WEB-INF/classes/controller/member/MemberInsertController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/minstcoProject_war_exploded/WEB-INF/classes/controller/member/MemberInsertController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/minstcoProject_war_exploded/WEB-INF/classes/controller/service/IMemberService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/minstcoProject_war_exploded/WEB-INF/classes/controller/service/MemberService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/minstcoProject_war_exploded/WEB-INF/classes/controller/vo/MemberVO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/minstcoProject_war_exploded/WEB-INF/classes/controller/vo/MemberVO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/HttpUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/dao/IMemberDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/dao/MemberDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/member/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/member/MemberController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/service/IMemberService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/service/MemberService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/HttpUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/MainController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/dao/IMemberDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/dao/MemberDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/member/MemberController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/member/MemberController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/member/MemberInsertController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/member/MemberInsertController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/service/IMemberService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/service/MemberService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/vo/MemberVO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/vo/MemberVO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/applicationContext.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../untitled/untitled.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../untitled/web/WEB-INF/applicationContext.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../untitled/web/WEB-INF/dispatcher-servlet.xml" beforeDir="false" />
@@ -236,7 +290,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/web/WEB-INF/views/index.jsp" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
@@ -265,6 +319,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mariadb" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -274,10 +329,10 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="database.main" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -374,31 +429,6 @@
         </option>
       </method>
     </configuration>
-    <configuration default="true" type="aws.lambda" factoryName="Local">
-      <option name="credentialProviderId" />
-      <option name="regionId" />
-      <option name="debugHost" value="localhost" />
-      <option name="environmentVariables">
-        <map />
-      </option>
-      <option name="handler" />
-      <option name="logicalFunctionName" />
-      <option name="memorySize" value="128" />
-      <option name="runtime" />
-      <option name="templateFile" />
-      <option name="timeout" value="300" />
-      <option name="useTemplate" value="false" />
-      <option name="input" />
-      <option name="inputIsFile" value="false" />
-      <sam>
-        <option name="additionalBuildArgs" />
-        <option name="additionalLocalArgs" />
-        <option name="buildInContainer" value="false" />
-        <option name="dockerNetwork" />
-        <option name="skipImagePull" value="false" />
-      </sam>
-      <method v="2" />
-    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -411,12 +441,26 @@
       <workItem from="1613796561101" duration="2103000" />
       <workItem from="1613798914337" duration="337000" />
       <workItem from="1613799315996" duration="5798000" />
-      <workItem from="1613957510892" duration="45114000" />
+      <workItem from="1613957510892" duration="50378000" />
+      <workItem from="1614241256448" duration="320000" />
+      <workItem from="1614241711365" duration="1476000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="530" y="255" key="#Inspections" timestamp="1614151897917">
@@ -427,10 +471,10 @@
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
     <state x="384" y="151" key="#Project_Structure/0.25.1792.1095@0.25.1792.1095" timestamp="1613796887069" />
-    <state x="360" y="231" width="1071" height="720" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1613798981992">
+    <state x="360" y="231" width="1071" height="720" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1614241024305">
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
-    <state x="360" y="231" width="1071" height="720" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1792.1095@0.25.1792.1095" timestamp="1613798981992" />
+    <state x="360" y="231" width="1071" height="720" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1792.1095@0.25.1792.1095" timestamp="1614241024305" />
     <state x="709" y="273" key="#com.intellij.ide.util.MemberChooser" timestamp="1614151712862">
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
@@ -455,62 +499,62 @@
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
     <state x="634" y="323" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.25.1792.1095@0.25.1792.1095" timestamp="1613977268671" />
-    <state width="1204" height="287" key="GridCell.Tab.0.bottom" timestamp="1614152417801">
+    <state width="1204" height="287" key="GridCell.Tab.0.bottom" timestamp="1614243193996">
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
-    <state width="1204" height="287" key="GridCell.Tab.0.bottom/0.25.1792.1095@0.25.1792.1095" timestamp="1614152417801" />
-    <state width="1204" height="287" key="GridCell.Tab.0.center" timestamp="1614152417800">
+    <state width="1204" height="287" key="GridCell.Tab.0.bottom/0.25.1792.1095@0.25.1792.1095" timestamp="1614243193996" />
+    <state width="1204" height="287" key="GridCell.Tab.0.center" timestamp="1614243193996">
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
-    <state width="1204" height="287" key="GridCell.Tab.0.center/0.25.1792.1095@0.25.1792.1095" timestamp="1614152417800" />
-    <state width="1204" height="287" key="GridCell.Tab.0.left" timestamp="1614152417800">
+    <state width="1204" height="287" key="GridCell.Tab.0.center/0.25.1792.1095@0.25.1792.1095" timestamp="1614243193996" />
+    <state width="1204" height="287" key="GridCell.Tab.0.left" timestamp="1614243193996">
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
-    <state width="1204" height="287" key="GridCell.Tab.0.left/0.25.1792.1095@0.25.1792.1095" timestamp="1614152417800" />
-    <state width="1204" height="287" key="GridCell.Tab.0.right" timestamp="1614152417801">
+    <state width="1204" height="287" key="GridCell.Tab.0.left/0.25.1792.1095@0.25.1792.1095" timestamp="1614243193996" />
+    <state width="1204" height="287" key="GridCell.Tab.0.right" timestamp="1614243193996">
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
-    <state width="1204" height="287" key="GridCell.Tab.0.right/0.25.1792.1095@0.25.1792.1095" timestamp="1614152417801" />
-    <state width="1204" height="287" key="GridCell.Tab.1.bottom" timestamp="1614152419063">
+    <state width="1204" height="287" key="GridCell.Tab.0.right/0.25.1792.1095@0.25.1792.1095" timestamp="1614243193996" />
+    <state width="1204" height="287" key="GridCell.Tab.1.bottom" timestamp="1614243193997">
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
-    <state width="1204" height="287" key="GridCell.Tab.1.bottom/0.25.1792.1095@0.25.1792.1095" timestamp="1614152419063" />
-    <state width="1204" height="287" key="GridCell.Tab.1.center" timestamp="1614152419062">
+    <state width="1204" height="287" key="GridCell.Tab.1.bottom/0.25.1792.1095@0.25.1792.1095" timestamp="1614243193997" />
+    <state width="1204" height="287" key="GridCell.Tab.1.center" timestamp="1614243193997">
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
-    <state width="1204" height="287" key="GridCell.Tab.1.center/0.25.1792.1095@0.25.1792.1095" timestamp="1614152419062" />
-    <state width="1204" height="287" key="GridCell.Tab.1.left" timestamp="1614152419062">
+    <state width="1204" height="287" key="GridCell.Tab.1.center/0.25.1792.1095@0.25.1792.1095" timestamp="1614243193997" />
+    <state width="1204" height="287" key="GridCell.Tab.1.left" timestamp="1614243193997">
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
-    <state width="1204" height="287" key="GridCell.Tab.1.left/0.25.1792.1095@0.25.1792.1095" timestamp="1614152419062" />
-    <state width="1204" height="287" key="GridCell.Tab.1.right" timestamp="1614152419063">
+    <state width="1204" height="287" key="GridCell.Tab.1.left/0.25.1792.1095@0.25.1792.1095" timestamp="1614243193997" />
+    <state width="1204" height="287" key="GridCell.Tab.1.right" timestamp="1614243193997">
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
-    <state width="1204" height="287" key="GridCell.Tab.1.right/0.25.1792.1095@0.25.1792.1095" timestamp="1614152419063" />
-    <state width="1204" height="287" key="GridCell.Tab.2.bottom" timestamp="1614152421473">
+    <state width="1204" height="287" key="GridCell.Tab.1.right/0.25.1792.1095@0.25.1792.1095" timestamp="1614243193997" />
+    <state width="1204" height="287" key="GridCell.Tab.2.bottom" timestamp="1614243193998">
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
-    <state width="1204" height="287" key="GridCell.Tab.2.bottom/0.25.1792.1095@0.25.1792.1095" timestamp="1614152421473" />
-    <state width="1204" height="287" key="GridCell.Tab.2.center" timestamp="1614152421472">
+    <state width="1204" height="287" key="GridCell.Tab.2.bottom/0.25.1792.1095@0.25.1792.1095" timestamp="1614243193998" />
+    <state width="1204" height="287" key="GridCell.Tab.2.center" timestamp="1614243193997">
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
-    <state width="1204" height="287" key="GridCell.Tab.2.center/0.25.1792.1095@0.25.1792.1095" timestamp="1614152421472" />
-    <state width="1204" height="287" key="GridCell.Tab.2.left" timestamp="1614152421472">
+    <state width="1204" height="287" key="GridCell.Tab.2.center/0.25.1792.1095@0.25.1792.1095" timestamp="1614243193997" />
+    <state width="1204" height="287" key="GridCell.Tab.2.left" timestamp="1614243193997">
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
-    <state width="1204" height="287" key="GridCell.Tab.2.left/0.25.1792.1095@0.25.1792.1095" timestamp="1614152421472" />
-    <state width="1204" height="287" key="GridCell.Tab.2.right" timestamp="1614152421473">
+    <state width="1204" height="287" key="GridCell.Tab.2.left/0.25.1792.1095@0.25.1792.1095" timestamp="1614243193997" />
+    <state width="1204" height="287" key="GridCell.Tab.2.right" timestamp="1614243193997">
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
-    <state width="1204" height="287" key="GridCell.Tab.2.right/0.25.1792.1095@0.25.1792.1095" timestamp="1614152421473" />
+    <state width="1204" height="287" key="GridCell.Tab.2.right/0.25.1792.1095@0.25.1792.1095" timestamp="1614243193997" />
     <state x="434" y="231" key="Maven.ArtifactSearchDialog" timestamp="1614057433454">
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
     <state x="434" y="231" key="Maven.ArtifactSearchDialog/0.25.1792.1095@0.25.1792.1095" timestamp="1614057433454" />
-    <state x="405" y="208" key="SettingsEditor" timestamp="1614055624541">
+    <state x="405" y="208" key="SettingsEditor" timestamp="1614240762961">
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
-    <state x="405" y="208" key="SettingsEditor/0.25.1792.1095@0.25.1792.1095" timestamp="1614055624541" />
+    <state x="405" y="208" key="SettingsEditor/0.25.1792.1095@0.25.1792.1095" timestamp="1614240762961" />
     <state x="302" y="146" key="new project wizard" timestamp="1614046238350">
       <screen x="0" y="25" width="1792" height="1095" />
     </state>

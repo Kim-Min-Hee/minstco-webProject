@@ -9,9 +9,10 @@
           <element id="library" level="application" name="jquery-2.1.1" />
         </element>
         <element id="directory" name="lib">
-          <element id="library" level="project" name="Spring-5.2.3.RELEASE" />
-          <element id="library" level="project" name="Spring MVC-5.2.3.RELEASE" />
           <element id="file-copy" path="/usr/local/Tomcat/lib/servlet-api.jar" />
+          <element id="library" level="project" name="Spring MVC-5.2.3.RELEASE" />
+          <element id="library" level="project" name="Spring-5.2.3.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-tx:4.3.18.RELEASE" />
         </element>
       </element>
     </root>

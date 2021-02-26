@@ -5,16 +5,14 @@ import controller.vo.MemberVO;
 
 public class MemberService {
 
-    private static MemberService memberService = new MemberService();
-    public MemberDAO memberDAO = MemberDAO.getInstance();
+    private final MemberDAO memberDAO;
 
-    private MemberService(){}
-
-    public static MemberService getInstance(){
-        return memberService;
+    public MemberService(MemberDAO memberDAO) {
+        this.memberDAO = memberDAO;
     }
 
-    public void memberInsert(MemberVO memberVO) {
-        memberDAO.memberInsert(memberVO);
-    }
+//    @Override
+//    public void register(MemberVO memberVO) throws Exception {
+//        memberDAO.register(memberVO);
+//    }
 }

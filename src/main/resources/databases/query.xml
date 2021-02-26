@@ -1,10 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="database">
-    <select id="members" resultType="controller.vo.MemberVO" parameterType="String">
-        SELECT *
-        FROM students
-        WHERE students.name=#{name}
-        LIMIT 1
-    </select>
+
+<mapper namespace="resources.databases.query">
+    <insert id="register">
+        INSERT INTO members(
+        id
+        ,password
+        ,name
+        ,phoneNumber
+        )VALUES (
+        #{id}
+        ,#{password}
+        ,#{name}
+        ,#{phoneNumber}
+        )
+    </insert>
 </mapper>

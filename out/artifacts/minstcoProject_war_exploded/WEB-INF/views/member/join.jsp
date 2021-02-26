@@ -9,6 +9,7 @@
 <html>
 <head>
     <title>member Join Page</title>
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/memberjoin.css">
 </head>
 <body>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>

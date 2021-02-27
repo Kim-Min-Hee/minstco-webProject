@@ -1,18 +1,13 @@
 package controller.service;
 
-import controller.dao.MemberDAO;
 import controller.vo.MemberVO;
+import org.codehaus.plexus.component.annotations.Component;
+import org.springframework.stereotype.Service;
 
-public class MemberService {
+import java.util.List;
 
-    private final MemberDAO memberDAO;
+@Service
+public interface MemberService {
 
-    public MemberService(MemberDAO memberDAO) {
-        this.memberDAO = memberDAO;
-    }
-
-//    @Override
-//    public void register(MemberVO memberVO) throws Exception {
-//        memberDAO.register(memberVO);
-//    }
+   public void minstcoDB (MemberVO memberVO);
 }

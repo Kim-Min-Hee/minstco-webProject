@@ -2,23 +2,19 @@ package controller.dao;
 
 import controller.vo.MemberVO;
 import org.apache.ibatis.session.SqlSession;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
+
+import java.util.List;
 
 @Repository
 public class MemberDAO {
 
-//    private static final String memberInsert = "resources.databases.query";
-//
-//    private final SqlSession sqlSession;
-//
-//    public MemberDAO(SqlSession sqlSession) {
-//        this.sqlSession = sqlSession;
-//    }
-//
-//
-//    @Override
-//    public void register(MemberVO memberVO) throws Exception {
-//        sqlSession.insert(memberInsert+".register",memberVO);
-//
-//    }
+    @Autowired
+   private SqlSession sqlSession;
+
+    public int minstcoDB(MemberVO memberVO) {
+         return sqlSession.insert("member.minstcoDB",memberVO);
+    }
+
 }

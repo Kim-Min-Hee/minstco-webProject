@@ -12,7 +12,9 @@
           <element id="file-copy" path="/usr/local/Tomcat/lib/servlet-api.jar" />
           <element id="library" level="project" name="Spring MVC-5.2.3.RELEASE" />
           <element id="library" level="project" name="Spring-5.2.3.RELEASE" />
-          <element id="library" level="project" name="Maven: org.springframework:spring-tx:4.3.18.RELEASE" />
+          <element id="library" level="project" name="Maven: org.mariadb.jdbc:mariadb-java-client:2.6.0" />
+          <element id="library" level="project" name="Maven: org.mybatis:mybatis-spring:1.2.2" />
+          <element id="library" level="project" name="Maven: org.mybatis:mybatis:3.2.7" />
         </element>
       </element>
     </root>

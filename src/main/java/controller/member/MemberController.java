@@ -1,9 +1,9 @@
 package controller.member;
 
-import controller.service.MemberService;
-import controller.vo.LoginVO;
-import controller.vo.MemberVO;
 import org.springframework.beans.factory.annotation.Autowired;
+import service.MemberService;
+import vo.LoginVO;
+import vo.MemberVO;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -29,7 +29,7 @@ public ModelAndView memberWrite(){
 @RequestMapping(value = "joinTest",method = RequestMethod.POST)
 @ResponseBody
 public String memberInsert(MemberVO memberVO) throws Exception{
-        memberService.minstcoDB(memberVO);
+        memberService.insertMember(memberVO);
        return "id ="+ memberVO.getId()+"\t"+"password = "+ memberVO.getPassword()+"\t"+"name = "+ memberVO.getName()+"\t"+"phoneNumber = "+ memberVO.getPhoneNumber();
 }
 

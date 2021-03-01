@@ -1,11 +1,10 @@
-package controller.dao;
+package dao;
 
-import controller.vo.MemberVO;
+
 import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
-
-import java.util.List;
+import vo.MemberVO;
 
 @Repository
 public class MemberDAO {
@@ -13,7 +12,7 @@ public class MemberDAO {
     @Autowired
    private SqlSession sqlSession;
 
-    public int minstcoDB(MemberVO memberVO) {
+    public int insertMember(MemberVO memberVO) {
          return sqlSession.insert("member.minstcoDB",memberVO);
     }
 

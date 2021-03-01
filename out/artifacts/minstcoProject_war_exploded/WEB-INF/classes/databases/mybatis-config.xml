@@ -7,7 +7,7 @@
 
 <typeAliases >
 
-    <typeAlias alias="MemberVO" type="controller.vo.MemberVO"></typeAlias>
+    <typeAlias alias="MemberVO" type="vo.MemberVO"></typeAlias>
 
 </typeAliases>
 

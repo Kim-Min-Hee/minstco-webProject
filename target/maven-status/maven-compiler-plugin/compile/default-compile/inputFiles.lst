@@ -1,8 +1,7 @@
 /Users/kimminhee/eclipse-workspace/minstcoProject/src/main/java/controller/MainController.java
-/Users/kimminhee/eclipse-workspace/minstcoProject/src/main/java/controller/vo/MemberVO.java
-/Users/kimminhee/eclipse-workspace/minstcoProject/src/main/java/controller/vo/LoginVO.java
-/Users/kimminhee/eclipse-workspace/minstcoProject/src/main/java/controller/Controller.java
-/Users/kimminhee/eclipse-workspace/minstcoProject/src/main/java/controller/service/MemberServiceImpl.java
-/Users/kimminhee/eclipse-workspace/minstcoProject/src/main/java/controller/dao/MemberDAO.java
-/Users/kimminhee/eclipse-workspace/minstcoProject/src/main/java/controller/service/MemberService.java
+/Users/kimminhee/eclipse-workspace/minstcoProject/src/main/java/vo/LoginVO.java
+/Users/kimminhee/eclipse-workspace/minstcoProject/src/main/java/service/MemberService.java
+/Users/kimminhee/eclipse-workspace/minstcoProject/src/main/java/service/MemberServiceImpl.java
+/Users/kimminhee/eclipse-workspace/minstcoProject/src/main/java/vo/MemberVO.java
+/Users/kimminhee/eclipse-workspace/minstcoProject/src/main/java/dao/MemberDAO.java
 /Users/kimminhee/eclipse-workspace/minstcoProject/src/main/java/controller/member/MemberController.java

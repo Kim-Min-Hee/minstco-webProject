@@ -7,7 +7,7 @@
 
 <typeAliases >
 
-    <typeAlias alias="MemberVO" type="vo.MemberVO"></typeAlias>
+    <typeAlias alias="MemberVO" type="com.minstco.vo.MemberVO"></typeAlias>
 
 </typeAliases>
 

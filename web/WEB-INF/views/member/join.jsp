@@ -10,6 +10,8 @@
 <head>
     <title>member Join Page</title>
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/memberjoin.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 </head>
 <body>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -17,9 +19,19 @@
 <head>
     <title>member Join Page</title>
 </head>
+<script type="text/javascript">
+    $("#submit").on("click",function (){
+        if($("#id").val()===""){
+            alert("아이디를 입력해주세요.");
+            $("#id").focus();
+            return false;
+        }
+
+    });
+</script>
 <body>
 <div class="wrapper">
-    <form action="/member/joinTest" method="post">
+    <form action="/member/joinCheck" method="post" >
         <div class="wrap">
             <div class="subject">
                 <spa>회원가입</spa>
@@ -48,8 +60,8 @@
                     <input class="phoneNumber_input" name="phoneNumber">
                 </div>
             </div>
+            <<button type="button">가입하기</button>>
         </div>
-        <button type="submit">가입하기</button>
     </form>
 </div>
 </body>

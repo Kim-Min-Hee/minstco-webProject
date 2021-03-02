@@ -6,6 +6,16 @@ public class MemberVO {
     private String password;
     private String name;
     private String phoneNumber;
+    private String email;
+    private String gender;
+
+    public String getEmail() {
+        return email;
+    }
+
+    public String getGender() {
+        return gender;
+    }
 
     public String getId() {
         return id;
@@ -37,5 +47,13 @@ public class MemberVO {
 
     public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
     }
 }

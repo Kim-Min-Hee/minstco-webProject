@@ -6,32 +6,17 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
     <title>member Join Page</title>
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/memberjoin.css">
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
+    <link rel="stylesheet" href=${pageContext.request.contextPath}/css/memberJoin.css">
+    <script src="/script/memberJoin.js"></script>
 </head>
-<body>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
-<head>
-    <title>member Join Page</title>
-</head>
-<script type="text/javascript">
-    $("#submit").on("click",function (){
-        if($("#id").val()===""){
-            alert("아이디를 입력해주세요.");
-            $("#id").focus();
-            return false;
-        }
-
-    });
-</script>
 <body>
 <div class="wrapper">
-    <form action="/member/joinCheck" method="post" >
+    <form action="/member/joinCheck" method="post" onclick="return checkAll()">
         <div class="wrap">
             <div class="subject">
                 <spa>회원가입</spa>
@@ -39,28 +24,47 @@
             <div class="id_wrap">
                 <div class="id_name">아이디</div>
                 <div class="id_input_box">
-                    <input class="id_input" name="id">
+                    <input class="id_input" id="id" name="id">
                 </div>
             </div>
             <div class="password_wrap">
                 <div class="password_name">비밀번호</div>
                 <div class="password_input_box">
-                    <input class="password_input" name="password">
+                    <input class="password_input" id="password" name="password">
+                </div>
+            </div>
+            <div class="passwordCheck_wrap">
+                <div class="passwordCheck_name">비밀번호</div>
+                <div class="passwordCheck_input_box">
+                    <input class="passwordCheck_input" id="passwordCheck" name="passwordCheck">
                 </div>
             </div>
             <div class="user_wrap">
                 <div class="user_name">이름</div>
                 <div class="user_input_box">
-                    <input class="user_input" name="name">
+                    <input class="user_input" id="name" name="name">
                 </div>
             </div>
             <div class="phoneNumber_wrap">
                 <div class="phoneNumber_name">휴대폰번호</div>
                 <div class="phoneNumber_input_box">
-                    <input class="phoneNumber_input" name="phoneNumber">
+                    <input class="phoneNumber_input" id="phoneNumber" name="phoneNumber">
                 </div>
             </div>
-            <<button type="button">가입하기</button>>
+            <div class="email_wrap">
+                <div class="email_name">이메일</div>
+                <div class="email_input_box">
+                    <input class="email_input" id="email" name="email">
+                </div>
+            </div>
+            <div class="gender_wrap">
+                <div class="gender_name">성별</div>
+                    <input type="radio"  name="gender" value="M" checked="checked">남
+                    <input type="radio"   name="gender" value="F">여
+                </div>
+            </div>
+        <div class="join_button_wrap">
+            <input type="submit" class="join_button" id="join" value="가입하기">
         </div>
     </form>
 </div>

@@ -13,7 +13,7 @@ public class MemberDAO {
    private SqlSession sqlSession;
 
     public int insertMember(MemberVO memberVO) {
-         return sqlSession.insert("member.minstcoDB",memberVO);
+         return sqlSession.insert("member.memberInsert",memberVO);
     }
 
 }

@@ -30,7 +30,8 @@ public ModelAndView memberWrite(){
 @ResponseBody
 public String memberInsert(MemberVO memberVO) throws Exception{
         memberService.insertMember(memberVO);
-       return "id ="+ memberVO.getId()+"\t"+"password = "+ memberVO.getPassword()+"\t"+"name = "+ memberVO.getName()+"\t"+"phoneNumber = "+ memberVO.getPhoneNumber();
+       return "id ="+ memberVO.getId()+"\t"+"password = "+ memberVO.getPassword()+"\t"+"name = "+ memberVO.getName()+"\t"
+               +"phoneNumber = "+ memberVO.getPhoneNumber()+"email = "+memberVO.getEmail()+"gender = "+memberVO.getGender();
 }
 
 @RequestMapping(value = "login",method = RequestMethod.GET)

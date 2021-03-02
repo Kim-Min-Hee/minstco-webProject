@@ -11,12 +11,12 @@
 <head>
     <meta charset="UTF-8">
     <title>member Join Page</title>
-    <link rel="stylesheet" href=${pageContext.request.contextPath}/css/memberJoin.css">
+    <link rel="stylesheet" href="/css/memberJoin.css">
     <script src="/script/memberJoin.js"></script>
 </head>
 <body>
 <div class="wrapper">
-    <form action="/member/joinCheck" method="post" onclick="return checkAll()">
+    <form action="/member/joinCheck" name=form method="post" onsubmit="alert(checkAll())">
         <div class="wrap">
             <div class="subject">
                 <spa>회원가입</spa>

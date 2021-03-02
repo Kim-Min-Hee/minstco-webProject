@@ -1,21 +1,26 @@
     function checkAll() {
-        if (!checkId(form.id.value)) {
+        var id = document.getElementById('id');
+        var password = document.getElementById('password');
+        var passwordCheck = document.getElementById('passwordCheck');
+        var name = document.getElementById(name);
+        var phoneNumber = document.getElementById('phoneNumber');
+        var email = document.getElementById('email');
+        if (!checkId(id)) {
             return false;
         }
-        if (!checkPassword(form.id.value, form.password.value, form.passwordCheck.value)) {
+        if (!checkPassword(id, password, passwordCheck)) {
             return false;
         }
-        if (!checkName(form.name.value)) {
+        if (!checkName(name)) {
             return false;
         }
-        if (!checkEmail(form.email.value)) {
+        if (!checkEmail(email)) {
             return false;
         }
-        if (!checkPhoneNumber(form.phoneNumber.value)) {
+        if (!checkPhoneNumber(phoneNumber)) {
             return false;
         }
         return true;
-
 
         function checkExistData(value, dataName) {
             if (value == "") {
@@ -32,8 +37,8 @@
             }
             if (!idEx.test(id)) {
                 alert("아이디는 4자리이상 12자리 이하로 작성 부탁 드립니다.");
-                form.id.value = "";
-                form.id.focus();
+                id = "";
+                id.focus();
                 return false;
             }
             return true;
@@ -49,22 +54,22 @@
             var passwordEx = /^[a-zA-z0-9]{4,12}$/;
             if (!passwordEx.test(password)) {
                 alert("비밀번호는 영문 대소문자와 숫자를 조합하여 4자리 이상 12자리 이하로 작성 부탁 드립니다.");
-                form.password.value = "";
-                form.password.focus();
+                password = "";
+                password.focus();
                 return false;
             }
             if (password != passwordCheck) {
                 alert("두 비밀번호가 일치하지 않습니다.");
-                form.password.value = "";
-                form.passwordCheck.value = "";
-                form.passwordCheck.focus();
+                passwordCheck = "";
+                passwordCheck.value = "";
+                passwordCheck.focus();
                 return false;
             }
             if (id == password) {
                 alert("아이디와 비밀번호는 동일할 수 없습니다.");
-                form.password.value = "";
-                form.passwordCheck.value = "";
-                form.passwordCheck.focus();
+                id = "";
+                passwordCheck.value = "";
+                passwordCheck.focus();
             }
             return true;
         }
@@ -76,8 +81,8 @@
             var emailEx = /^[A-Za-z0-9_]+[A-Za-z0-9]*[@]{1}[A-Za-z0-9]+[A-Za-z0-9]*[.]{1}[A-Za-z]{1,3}$/;
             if (!emailEx.test(email)) {
                 alert("이메일 형식이 안맞습니다.");
-                form.email.value = "";
-                form.email.focus();
+                email = "";
+                email.focus();
                 return false;
             }
             return true;
@@ -105,5 +110,5 @@
                 return false;
             }
         }
-    }
 
+    }

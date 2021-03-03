@@ -16,7 +16,7 @@
 </head>
 <body>
 <div class="wrapper">
-    <form action="/member/joinCheck" name="form" method="post" onsubmit="alert(checkAll())">
+    <form action="/member/join"  method="POST" name="memberForm">
         <div class="wrap">
             <div class="subject">
                 <spa>회원가입</spa>
@@ -45,6 +45,12 @@
                     <input class="user_input" id="name" name="name">
                 </div>
             </div>
+            <div class="address_wrap">
+                <div class="address_name">주소</div>
+                <div class="address_input_box">
+                    <input class="address_input" id="address" name="address">
+                </div>
+            </div>
             <div class="phoneNumber_wrap">
                 <div class="phoneNumber_name">휴대폰번호</div>
                 <div class="phoneNumber_input_box">
@@ -64,7 +70,7 @@
                 </div>
             </div>
         <div class="join_button_wrap">
-            <input type="submit" class="join_button" id="join" value="가입하기">
+            <input type="submit" class="join_button" id="join" value="가입하기" onclick=" return checkAll()">
         </div>
     </form>
 </div>

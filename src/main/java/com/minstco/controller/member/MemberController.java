@@ -11,10 +11,10 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
 
-
 @RequestMapping("/member/")
 @Controller
 public class MemberController  {
+
 
     @Autowired
     MemberService memberService;
@@ -26,12 +26,13 @@ public ModelAndView memberWrite(){
     return modelAndView;
 }
 
-@RequestMapping(value = "joinCheck",method = RequestMethod.POST)
+@RequestMapping(value = "join",method = RequestMethod.POST)
 @ResponseBody
 public String memberInsert(MemberVO memberVO) throws Exception{
         memberService.insertMember(memberVO);
-       return "id ="+ memberVO.getId()+"\t"+"password = "+ memberVO.getPassword()+"\t"+"name = "+ memberVO.getName()+"\t"
-               +"phoneNumber = "+ memberVO.getPhoneNumber()+"email = "+memberVO.getEmail()+"gender = "+memberVO.getGender();
+//       return "id ="+ memberVO.getId()+"\t"+"password = "+ memberVO.getPassword()+"\t"+"name = "+ memberVO.getName()+"\t"
+//               +"phoneNumber = "+ memberVO.getPhoneNumber()+"email = "+memberVO.getEmail()+"gender = "+memberVO.getGender();
+    return "redirect:/main";
 }
 
 @RequestMapping(value = "login",method = RequestMethod.GET)

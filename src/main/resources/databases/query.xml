@@ -5,7 +5,7 @@
 
 <mapper namespace="member">
 <insert id="memberInsert" parameterType="MemberVO">
-    INSERT INTO testTable (id,password,name,address,phoneNumber,email,gender,grade,discountRate,total,discount,joinDate)
-    values('${id}','${password}','${name}','${address}','${phoneNumber}','${email}','${');
+    INSERT INTO members (id,password,name,address,phoneNumber,email,gender,grade,discountRate,total,discount,joinDate)
+    values('${id}','${password}','${name}','${address}','${phoneNumber}','${email}','${gender}','C','${0.05}','${0}','${0}',now());
 </insert>
 </mapper>

@@ -7,5 +7,6 @@ import com.minstco.vo.MemberVO;
 @Service
 public interface MemberService {
 
+
    public void insertMember (MemberVO memberVO);
 }

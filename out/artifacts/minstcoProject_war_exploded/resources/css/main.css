@@ -3,9 +3,12 @@
     margin: 0;
     padding: 0;
 }
+a{
+    text-decoration: none;
+}
 /* 화면 전체 렙 */
 .wrapper{
-    width: 1900px;
+    width: 100%;
 }
 /* content 렙 */
 .wrap{
@@ -17,6 +20,19 @@
     width: 100%;
     height: 50px;
     background-color: lightblue;
+    position: relative;
+}
+.top-gnb_area .list{
+    position: absolute;
+    top: 0px;
+    right: 0;
+}
+.top-gnb_area .list li{
+    list-style: none;
+    float: left;
+    padding: 13px 15px 0 10px;
+    font-weight: 900;
+    cursor: pointer;
 }
 /* 로고,검색,로그인 */
 .top_area{
@@ -24,12 +40,12 @@
     height: 150px;
 }
 /* 로고 영역 */
-.logo_area{
-    width: 25%;
-    height: 100%;
-    background-color: red;
-    float: left;
-}
+/*.logo_area{*/
+/*    width: 25%;*/
+/*    height: 100%;*/
+/*    background-color: red;*/
+/*    float: left;*/
+/*}*/
 /* 검색 박스 영역 */
 .search_area{
     width: 50%;
@@ -75,6 +91,31 @@
     width: 100%;
     background-color: aquamarine;
     height: 1000px;
+}
+.login_success_area{
+    height: 62%;
+    width: 80%;
+    border: 2px solid mediumpurple;
+    border-radius: 15px;
+    margin: 5% auto;
+    padding-top: 5%;
+}
+.login_success_area>a{
+    font-size: 15px;
+    font-weight: 900;
+    display: inline-block;
+    margin-top: 5px;
+    background: azure;
+    width: 82px;
+    height: 22px;
+    line-height: 22px;
+    border-radius: 25px;
+    color: black;
+}
+.login_success_area>span{
+    display: block;
+    text-align: left;
+    margin-left: 10%;
 }
 /* float 속성 해제 */
 .clearfix{

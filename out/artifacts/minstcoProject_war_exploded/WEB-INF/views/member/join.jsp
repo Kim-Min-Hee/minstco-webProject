@@ -34,7 +34,7 @@
                 </div>
             </div>
             <div class="passwordCheck_wrap">
-                <div class="passwordCheck_name">비밀번호</div>
+                <div class="passwordCheck_name">비밀번호 확인</div>
                 <div class="passwordCheck_input_box">
                     <input class="passwordCheck_input" id="passwordCheck" name="passwordCheck">
                 </div>

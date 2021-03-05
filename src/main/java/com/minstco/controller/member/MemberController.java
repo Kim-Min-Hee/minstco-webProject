@@ -10,34 +10,37 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
+import java.util.Date;
+import java.util.logging.SimpleFormatter;
+
 
 @RequestMapping("/member/")
 @Controller
 public class MemberController  {
 
+    ModelAndView modelAndView = new ModelAndView();
 
     @Autowired
     MemberService memberService;
 
     @RequestMapping(value = "join",method = RequestMethod.GET)
 public ModelAndView memberWrite(){
-    ModelAndView modelAndView = new ModelAndView();
     modelAndView.setViewName("member/join");
     return modelAndView;
 }
 
 @RequestMapping(value = "join",method = RequestMethod.POST)
 @ResponseBody
-public String memberInsert(MemberVO memberVO) throws Exception{
+public ModelAndView memberInsert(MemberVO memberVO) throws Exception{
         memberService.insertMember(memberVO);
+        modelAndView.setViewName("main");
 //       return "id ="+ memberVO.getId()+"\t"+"password = "+ memberVO.getPassword()+"\t"+"name = "+ memberVO.getName()+"\t"
 //               +"phoneNumber = "+ memberVO.getPhoneNumber()+"email = "+memberVO.getEmail()+"gender = "+memberVO.getGender();
-    return "redirect:/main";
+    return modelAndView;
 }
 
 @RequestMapping(value = "login",method = RequestMethod.GET)
 public ModelAndView loginWrite(){
-        ModelAndView modelAndView = new ModelAndView();
         modelAndView.setViewName("member/login");
         return modelAndView;
 }

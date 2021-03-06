@@ -17,7 +17,6 @@ function checkAll() {
     }else if (!checkPhoneNumber(phoneNumber)) {
         return false;
     }else {
-        alert(name+"님 가입을 축하드립니다.");
        memberForm.submit();
        return true;
     }

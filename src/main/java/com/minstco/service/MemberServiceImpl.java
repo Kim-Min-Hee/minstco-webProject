@@ -12,8 +12,10 @@ public class MemberServiceImpl implements MemberService {
     @Autowired
     MemberDAO memberDAO;
 
-    public void insertMember(MemberVO memberVO) {
+    public MemberVO insertMember(MemberVO memberVO) throws Exception {
         //db와 연결 시작. (insert)
         memberDAO.insertMember(memberVO);
+
+        return memberVO;
     }
 }

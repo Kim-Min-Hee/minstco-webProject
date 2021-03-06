@@ -236,29 +236,11 @@
       <change beforePath="$PROJECT_DIR$/../minstco/src/service/Registration.java" beforeDir="false" afterPath="$PROJECT_DIR$/../minstco/src/service/Registration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../minstco/src/vo/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/../minstco/src/vo/Member.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/minstcoProject_war_exploded/WEB-INF/classes/com/minstco/controller/member/MemberController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/minstcoProject_war_exploded/WEB-INF/classes/com/minstco/controller/member/MemberController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/minstcoProject_war_exploded/WEB-INF/classes/databases/query.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/minstcoProject_war_exploded/WEB-INF/classes/databases/query.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/minstcoProject_war_exploded/WEB-INF/views/member/join.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/minstcoProject_war_exploded/WEB-INF/views/member/join.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/minstcoProject_war_exploded/WEB-INF/views/member/joinCheck.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/minstcoProject_war_exploded/WEB-INF/views/member/memberCheck.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/minstcoProject_war_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/minstcoProject_war_exploded/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/minstcoProject_war_exploded/resources/css/memberjoin.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/minstcoProject_war_exploded/resources/css/memberjoin.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/minstco/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/minstco/controller/MainController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/minstco/controller/member/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/minstco/controller/member/MemberController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/minstco/service/MemberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/minstco/service/MemberService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/databases/query.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/databases/query.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/minstco/controller/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/minstco/controller/MainController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/minstco/controller/member/MemberController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/minstco/controller/member/MemberController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/databases/query.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/databases/query.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/minstcoProject-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/minstco/service/MemberServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/minstco/service/MemberServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/views/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/views/main.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/views/member/join.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/views/member/join.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/resources/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/resources/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/resources/css/memberJoin.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/resources/css/memberJoin.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/resources/script/memberJoin.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/resources/script/memberJoin.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../untitled/untitled.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../untitled/web/WEB-INF/applicationContext.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../untitled/web/WEB-INF/dispatcher-servlet.xml" beforeDir="false" />
@@ -443,6 +425,8 @@
       <workItem from="1614696776416" duration="2078000" />
       <workItem from="1614731783034" duration="9623000" />
       <workItem from="1614745714257" duration="19478000" />
+      <workItem from="1614923700176" duration="277000" />
+      <workItem from="1614997393038" duration="8637000" />
     </task>
     <servers />
   </component>
@@ -518,54 +502,54 @@
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
     <state x="634" y="323" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.25.1792.1095@0.25.1792.1095" timestamp="1614578256302" />
-    <state width="1750" height="275" key="GridCell.Tab.0.bottom" timestamp="1614923690121">
+    <state width="1204" height="167" key="GridCell.Tab.0.bottom" timestamp="1615009725943">
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
-    <state width="1750" height="275" key="GridCell.Tab.0.bottom/0.25.1792.1095@0.25.1792.1095" timestamp="1614923690121" />
-    <state width="1750" height="275" key="GridCell.Tab.0.center" timestamp="1614923690121">
+    <state width="1204" height="167" key="GridCell.Tab.0.bottom/0.25.1792.1095@0.25.1792.1095" timestamp="1615009725943" />
+    <state width="1204" height="167" key="GridCell.Tab.0.center" timestamp="1615009725942">
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
-    <state width="1750" height="275" key="GridCell.Tab.0.center/0.25.1792.1095@0.25.1792.1095" timestamp="1614923690121" />
-    <state width="1750" height="275" key="GridCell.Tab.0.left" timestamp="1614923690121">
+    <state width="1204" height="167" key="GridCell.Tab.0.center/0.25.1792.1095@0.25.1792.1095" timestamp="1615009725942" />
+    <state width="1204" height="167" key="GridCell.Tab.0.left" timestamp="1615009725941">
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
-    <state width="1750" height="275" key="GridCell.Tab.0.left/0.25.1792.1095@0.25.1792.1095" timestamp="1614923690121" />
-    <state width="1750" height="275" key="GridCell.Tab.0.right" timestamp="1614923690121">
+    <state width="1204" height="167" key="GridCell.Tab.0.left/0.25.1792.1095@0.25.1792.1095" timestamp="1615009725941" />
+    <state width="1204" height="167" key="GridCell.Tab.0.right" timestamp="1615009725942">
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
-    <state width="1750" height="275" key="GridCell.Tab.0.right/0.25.1792.1095@0.25.1792.1095" timestamp="1614923690121" />
-    <state width="1204" height="332" key="GridCell.Tab.1.bottom" timestamp="1614923690114">
+    <state width="1204" height="167" key="GridCell.Tab.0.right/0.25.1792.1095@0.25.1792.1095" timestamp="1615009725942" />
+    <state width="1204" height="167" key="GridCell.Tab.1.bottom" timestamp="1615009725943">
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
-    <state width="1204" height="332" key="GridCell.Tab.1.bottom/0.25.1792.1095@0.25.1792.1095" timestamp="1614923690114" />
-    <state width="1204" height="332" key="GridCell.Tab.1.center" timestamp="1614923690114">
+    <state width="1204" height="167" key="GridCell.Tab.1.bottom/0.25.1792.1095@0.25.1792.1095" timestamp="1615009725943" />
+    <state width="1204" height="167" key="GridCell.Tab.1.center" timestamp="1615009725943">
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
-    <state width="1204" height="332" key="GridCell.Tab.1.center/0.25.1792.1095@0.25.1792.1095" timestamp="1614923690114" />
-    <state width="1204" height="332" key="GridCell.Tab.1.left" timestamp="1614923690113">
+    <state width="1204" height="167" key="GridCell.Tab.1.center/0.25.1792.1095@0.25.1792.1095" timestamp="1615009725943" />
+    <state width="1204" height="167" key="GridCell.Tab.1.left" timestamp="1615009725943">
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
-    <state width="1204" height="332" key="GridCell.Tab.1.left/0.25.1792.1095@0.25.1792.1095" timestamp="1614923690113" />
-    <state width="1204" height="332" key="GridCell.Tab.1.right" timestamp="1614923690114">
+    <state width="1204" height="167" key="GridCell.Tab.1.left/0.25.1792.1095@0.25.1792.1095" timestamp="1615009725943" />
+    <state width="1204" height="167" key="GridCell.Tab.1.right" timestamp="1615009725943">
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
-    <state width="1204" height="332" key="GridCell.Tab.1.right/0.25.1792.1095@0.25.1792.1095" timestamp="1614923690114" />
-    <state width="1204" height="332" key="GridCell.Tab.2.bottom" timestamp="1614923690115">
+    <state width="1204" height="167" key="GridCell.Tab.1.right/0.25.1792.1095@0.25.1792.1095" timestamp="1615009725943" />
+    <state width="1204" height="167" key="GridCell.Tab.2.bottom" timestamp="1615009725944">
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
-    <state width="1204" height="332" key="GridCell.Tab.2.bottom/0.25.1792.1095@0.25.1792.1095" timestamp="1614923690115" />
-    <state width="1204" height="332" key="GridCell.Tab.2.center" timestamp="1614923690114">
+    <state width="1204" height="167" key="GridCell.Tab.2.bottom/0.25.1792.1095@0.25.1792.1095" timestamp="1615009725944" />
+    <state width="1204" height="167" key="GridCell.Tab.2.center" timestamp="1615009725944">
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
-    <state width="1204" height="332" key="GridCell.Tab.2.center/0.25.1792.1095@0.25.1792.1095" timestamp="1614923690114" />
-    <state width="1204" height="332" key="GridCell.Tab.2.left" timestamp="1614923690114">
+    <state width="1204" height="167" key="GridCell.Tab.2.center/0.25.1792.1095@0.25.1792.1095" timestamp="1615009725944" />
+    <state width="1204" height="167" key="GridCell.Tab.2.left" timestamp="1615009725943">
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
-    <state width="1204" height="332" key="GridCell.Tab.2.left/0.25.1792.1095@0.25.1792.1095" timestamp="1614923690114" />
-    <state width="1204" height="332" key="GridCell.Tab.2.right" timestamp="1614923690114">
+    <state width="1204" height="167" key="GridCell.Tab.2.left/0.25.1792.1095@0.25.1792.1095" timestamp="1615009725943" />
+    <state width="1204" height="167" key="GridCell.Tab.2.right" timestamp="1615009725944">
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
-    <state width="1204" height="332" key="GridCell.Tab.2.right/0.25.1792.1095@0.25.1792.1095" timestamp="1614923690114" />
+    <state width="1204" height="167" key="GridCell.Tab.2.right/0.25.1792.1095@0.25.1792.1095" timestamp="1615009725944" />
     <state x="434" y="231" key="Maven.ArtifactSearchDialog" timestamp="1614057433454">
       <screen x="0" y="25" width="1792" height="1095" />
     </state>

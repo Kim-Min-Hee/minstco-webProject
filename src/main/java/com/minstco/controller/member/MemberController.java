@@ -31,11 +31,18 @@ public ModelAndView memberWrite(){
 
 @RequestMapping(value = "join",method = RequestMethod.POST)
 @ResponseBody
-public ModelAndView memberInsert(MemberVO memberVO) throws Exception{
-        memberService.insertMember(memberVO);
+public ModelAndView memberInsert(MemberVO memberVO){
+            try {
+                memberService.insertMember(memberVO);
+                modelAndView.addObject("result","success");
+                modelAndView.addObject("message","가입이 성공셨습니다.");
+                modelAndView.addObject("data",memberVO.getName());
+            }catch (Exception e){
+                modelAndView.addObject("result","failed");
+                modelAndView.addObject("message","가입이 실패하셨습니다.");
+            }
+
         modelAndView.setViewName("main");
-//       return "id ="+ memberVO.getId()+"\t"+"password = "+ memberVO.getPassword()+"\t"+"name = "+ memberVO.getName()+"\t"
-//               +"phoneNumber = "+ memberVO.getPhoneNumber()+"email = "+memberVO.getEmail()+"gender = "+memberVO.getGender();
     return modelAndView;
 }
 

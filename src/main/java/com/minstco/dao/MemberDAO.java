@@ -17,7 +17,7 @@ public class MemberDAO {
     }
 
     public int idCheck(MemberVO memberVO) throws Exception{
-        int result = sqlSession.selectOne("member.idCheck",memberVO);
-        return result;
+        System.out.println("dao"+memberVO.getId());
+        return sqlSession.selectOne("member.idCheck",memberVO);
     }
 }

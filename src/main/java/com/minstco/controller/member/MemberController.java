@@ -28,12 +28,13 @@ public ModelAndView memberWrite(){
     modelAndView.setViewName("member/join");
     return modelAndView;
 }
-@ResponseBody
 @RequestMapping(value = "/idCheck" , method = RequestMethod.POST)
-public int idCheck (MemberVO memberVO) throws Exception{
-        int result = memberService.idCheck(memberVO);
-        return result;
-}
+@ResponseBody
+    public ModelAndView memberIdCheck(MemberVO memberVO) throws Exception{
+    System.out.println(memberVO.getId());
+            memberService.idCheck(memberVO);
+            return modelAndView;
+    }
 
 @RequestMapping(value = "join",method = RequestMethod.POST)
 @ResponseBody

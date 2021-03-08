@@ -118,12 +118,16 @@ function fn_idCheck(){
         dataType : "json",
         data : {"id" : $('id').val()},
         success : function (data){
+            console.log('data',data);
             if(data==1){
                 alert("중복된 아이디 입니다.");
             }else if(data ==0){
                 $('idCheck').attr("value","Y");
                 alert("사용 가능한 아이디 입니다.");
             }
+        },
+        error : function (data){
+            console.log('error',data)
         }
     })
 }

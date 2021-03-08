@@ -1,6 +1,8 @@
 package com.minstco.vo;
 
 
+import com.minstco.dao.MemberDAO;
+
 import java.sql.Timestamp;
 
 public class MemberVO {
@@ -113,4 +115,5 @@ public class MemberVO {
     public void setAddress(String address) {
         this.address = address;
     }
+
 }

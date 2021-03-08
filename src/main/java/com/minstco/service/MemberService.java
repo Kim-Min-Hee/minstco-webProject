@@ -9,4 +9,7 @@ public interface MemberService {
 
 
    public MemberVO insertMember  (MemberVO memberVO) throws  Exception;
+
+   public int idCheck (MemberVO memberVO) throws Exception;
+
 }

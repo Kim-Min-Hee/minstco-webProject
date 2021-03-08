@@ -8,20 +8,6 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
-<%
-//    String name = "";
-//    if(request.getAttribute("data")!=null){
-//        name =  request.getAttribute("data").toString();
-//    }
-    String result ="";
-    String name = "";
-    String message ="";
-    if(request.getAttribute("result") != null){
-        result = request.getAttribute("result").toString();
-        name = request.getAttribute("data").toString();
-        message = request.getAttribute("message").toString();
-    }
-%>
 <html>
 <head>
     <meta charset="UTF-8">
@@ -30,9 +16,6 @@
 
 </head>
 <body>
-<input type ="hidden" name = "name" id ="userName" value="<%=name%>"/>
-<input type="hidden" name="result" id="result" value="<%=result%>">
-<input type="hidden" name="message" id="message" value="<%=message%>">
  <div class="wrapper">
      <div class="wrap">
          <div class="top-gnb_area">
@@ -88,15 +71,15 @@
      </div>
  </div>
      <script>
-         var userName = document.getElementById("userName").value;
-         var  result = document.getElementById("result").value;
-         var message = document.getElementById("message").value;
-         if(result=="success"){
-             alert(userName+"님 가입을 축하드립니다.");
-         }else if(result =="failed"){
-             alert(document.getElementById("message"));
-         }
+         var result = '${result}';
+         var message = '${message}';
+         var data = '${data}';
 
+         if(result == "success"){
+             alert(data+"님"+message);
+         }else if(result=="failed"){
+             alert(message);
+         }
      /*    $("#gnb_logout_button").click(function (){
              $.ajax({
                  type: "POST",

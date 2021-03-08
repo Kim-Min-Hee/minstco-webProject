@@ -1,3 +1,4 @@
+
 function checkAll() {
     var id = document.getElementById('id').value;
     var password = document.getElementById('password').value;
@@ -8,13 +9,13 @@ function checkAll() {
     var memberForm = document.getElementById('memberForm');
     if (!checkId(id)) {
         return false;
-    }else if (!checkPassword(id,password,passwordCheck)) {
+    } else if (!checkPassword(id, password, passwordCheck)) {
         return false;
-    }else if (!checkName(name)) {
+    } else if (!checkName(name)) {
         return false;
-    }else if (!checkEmail(email)) {
+    } else if (!checkEmail(email)) {
         return false;
-    }else if (!checkPhoneNumber(phoneNumber)) {
+    } else if (!checkPhoneNumber(phoneNumber)) {
         return false;
     }else {
        memberForm.submit();
@@ -108,5 +109,22 @@ function checkAll() {
             return false;
         }
         return true;
-
     }
+
+function fn_idCheck(){
+    $.ajax({
+        url : "/member/idCheck",
+        type : "POST",
+        dataType : "json",
+        data : {"id" : $('id').val()},
+        success : function (data){
+            if(data==1){
+                alert("중복된 아이디 입니다.");
+            }else if(data ==0){
+                $('idCheck').attr("value","Y");
+                alert("사용 가능한 아이디 입니다.");
+            }
+        }
+    })
+}
+

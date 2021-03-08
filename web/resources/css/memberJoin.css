@@ -48,6 +48,14 @@
     border: none;
     font-size: 28px;
 }
+.id_input_check1{
+    color: green;
+    display: none;
+}
+.id_input_check2{
+    color: red;
+    display: none;
+}
 /* 비밀번호 영역 */
 .password_wrap{
     width: 100%;

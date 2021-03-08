@@ -4,8 +4,16 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="member">
-<insert id="memberInsert" parameterType="MemberVO">
-    INSERT INTO members (id,password,name,address,phoneNumber,email,gender,grade,discountRate,total,discount,joinDate)
-    values('${id}','${password}','${name}','${address}','${phoneNumber}','${email}','${gender}','C','${0.05}','${0}','${0}',now());
-</insert>
+    <insert id="memberInsert" parameterType="MemberVO">
+        INSERT INTO members (id,password,name,address,phoneNumber,email,gender,grade,discountRate,total,discount,joinDate)
+        values('${id}','${password}','${name}','${address}','${phoneNumber}','${email}','${gender}','C','${0.05}','${0}','${0}',now());
+    </insert>
+
+    <select id="idCheck" resultType="int">
+        SELECT COUNT(*) FROM members
+        WHERE id = #{id}
+    </select>
 </mapper>
+
+
+

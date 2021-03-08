@@ -12,7 +12,9 @@
     <meta charset="UTF-8">
     <title>member Join Page</title>
     <link rel="stylesheet" href="/css/memberJoin.css">
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="/script/memberJoin.js"></script>
+
 </head>
 <body>
 <div class="wrapper">
@@ -25,6 +27,7 @@
                 <div class="id_name">아이디</div>
                 <div class="id_input_box">
                     <input class="id_input" id="id" name="id">
+                    <button class="idCheck" type="button" id="idCheck" onclick="fn_idCheck();" value="N">중복 체크</button>
                 </div>
             </div>
             <div class="password_wrap">
@@ -73,7 +76,7 @@
             <input type="submit" class="join_button" id="join" value="가입하기" onclick=" return checkAll()">
         </div>
     </form>
-</div>
+    </div>
 </body>
 </html>
 

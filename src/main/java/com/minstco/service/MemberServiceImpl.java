@@ -18,4 +18,11 @@ public class MemberServiceImpl implements MemberService {
 
         return memberVO;
     }
+
+    public int idCheck(MemberVO memberVO) throws Exception {
+        int result = memberDAO.idCheck(memberVO);
+        return result;
+    }
+
+
 }

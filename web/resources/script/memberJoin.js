@@ -17,12 +17,12 @@ function checkAll() {
         return false;
     } else if (!checkPhoneNumber(phoneNumber)) {
         return false;
-    }else {
-       memberForm.submit();
-       return true;
+    } else {
+        memberForm.submit();
+        return true;
     }
-
 }
+
     function checkExistData(value, dataName) {
         if (value == "") {
             alert(dataName + "입력해주세요!!!!");
@@ -43,11 +43,35 @@ function checkAll() {
             id = "";
             return false;
         }
-
         return true;
     }
+function fn_idCheck() {
+    var id = document.getElementById('id');
+    var jsonData ={id :id};
+    $.ajax({
+        url: "/member/idCheck",
+        type: "post",
+        dataType: "json",
+        data: jsonData,
+        contentType: 'application/json',
+        success: function (data) {
+            console.log('data', data);
+            if (data == 0) {
+                $("#idCheck").attr("value", "Y");
+                console.log("아이디 없음")
+                alert("사용 가능한 아이디 입니다.");
+            } else if (data == 1) {
+                console.log("아이디 있음");
+                alert("이미 사용중인 아이디 입니다.");
+            }
+        },
+        error: function (data) {
+            console.log('error', data)
+        }
+    });
+}
 
-    function checkPassword(id,password, passwordCheck) {
+    function checkPassword(id, password, passwordCheck) {
         if (!checkExistData(password, "비밀번호")) {
             return false;
         }
@@ -111,24 +135,7 @@ function checkAll() {
         return true;
     }
 
-function fn_idCheck(){
-    $.ajax({
-        url : "/member/idCheck",
-        type : "POST",
-        dataType : "json",
-        data : {"id" : $('id').val()},
-        success : function (data){
-            console.log('data',data);
-            if(data==1){
-                alert("중복된 아이디 입니다.");
-            }else if(data ==0){
-                $('idCheck').attr("value","Y");
-                alert("사용 가능한 아이디 입니다.");
-            }
-        },
-        error : function (data){
-            console.log('error',data)
-        }
-    })
-}
+
+
+
 

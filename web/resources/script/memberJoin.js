@@ -46,7 +46,7 @@ function checkAll() {
         return true;
     }
 function fn_idCheck() {
-    var id = document.getElementById('id');
+    var id = document.getElementById('id').value;
     var jsonData ={id :id};
     $.ajax({
         url: "/member/idCheck",

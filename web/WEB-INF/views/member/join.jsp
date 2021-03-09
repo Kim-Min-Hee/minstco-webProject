@@ -26,11 +26,12 @@
                 <div class="id_name">아이디</div>
                 <div class="id_input_box">
                     <input class="id_input" id="id" name="id">
+                    <button type="button" id="idCheck" onclick="fn_idCheck()">아이디 중복 검사</button>
                 </div>
             </div>
-            <div class="join_button_wrap">
-                <input type="button" id="idCheck" name="idCheck" value="아이디 중복검사" onclick="fn_idCheck()">
-            </div>
+<%--            <div class="join_button_wrap">--%>
+<%--                <button type="button" id="idCheck" name="idCheck" value="N" onclick="fn_idCheck()">중복</button>--%>
+<%--            </div>--%>
             <div class="password_wrap">
                 <div class="password_name">비밀번호</div>
                 <div class="password_input_box">

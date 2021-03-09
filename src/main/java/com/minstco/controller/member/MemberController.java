@@ -31,7 +31,9 @@ public ModelAndView memberWrite(){
 @RequestMapping(value = "idCheck" , method = RequestMethod.POST)
 @ResponseBody
     public int idCheck(MemberVO memberVO) throws Exception{
+    System.out.println(memberVO.getId());
         int result = memberService.idCheck(memberVO);
+
             return result;
     }
 

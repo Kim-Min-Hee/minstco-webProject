@@ -29,10 +29,9 @@ public ModelAndView memberWrite(){
 }
     @RequestMapping(value = "idCheck" , method = RequestMethod.POST)
     @ResponseBody
-    public ModelAndView  idCheck(@RequestBody JSONObject jobj) throws Exception{
-        System.out.println(jobj.get("id"));
-        MemberVO memberVO = new MemberVO();
-        memberService.idCheck(memberVO);
+    public ModelAndView  idCheck(@RequestBody String id){
+        System.out.println(id);
+        memberService.idCheck(id);
         return modelAndView;
     }
 

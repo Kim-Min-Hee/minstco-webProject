@@ -2,6 +2,7 @@ package com.minstco.controller.member;
 
 import com.minstco.dao.MemberDAO;
 import org.apache.ibatis.session.SqlSession;
+import org.json.simple.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import com.minstco.service.MemberService;
 import com.minstco.vo.LoginVO;
@@ -10,7 +11,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
-import java.util.HashMap;
 
 
 @RequestMapping("/member/")
@@ -27,18 +27,14 @@ public ModelAndView memberWrite(){
     modelAndView.setViewName("member/join");
     return modelAndView;
 }
-//    @RequestMapping(value = "idCheck" , method = RequestMethod.POST)
-//    @ResponseBody
-//    public int  idCheck(@RequestBody MemberVO memberVO) throws Exception{
-//        int result = memberService.idCheck(memberVO.getId());
-//        return result;
-//    }
-    @RequestMapping(value = "idCheck" , method=RequestMethod.POST)
-public @ResponseBody int idCheck(@RequestParam("id")String id){
-
-        int cnt = memberService.idCheck(id);
-        return cnt;
-}
+    @RequestMapping(value = "idCheck" , method = RequestMethod.POST)
+    @ResponseBody
+    public ModelAndView  idCheck(@RequestBody JSONObject jobj) throws Exception{
+        System.out.println(jobj.get("id"));
+        MemberVO memberVO = new MemberVO();
+        memberService.idCheck(memberVO);
+        return modelAndView;
+    }
 
 @RequestMapping(value = "join",method = RequestMethod.POST)
 @ResponseBody

@@ -16,8 +16,8 @@ public class MemberDAO {
          return sqlSession.insert("member.memberInsert",memberVO);
     }
 
-    public int  idCheck(String id){
-        int cnt =  sqlSession.selectOne("member.idCheck",id);
-        return cnt;
+    public int  idCheck(MemberVO memberVO){
+        int result =  sqlSession.selectOne("member.idCheck",memberVO);
+        return result;
     }
 }

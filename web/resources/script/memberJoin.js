@@ -49,14 +49,15 @@ function fn_idCheck() {
     var id = document.getElementById('id').value;
     var jsonData ={id :id};
     $.ajax({
+        async: true,
         url: "idCheck",
         type: "POST",
         dataType: "json",
         data: jsonData,
-        contentType: 'application/json',
+        contentType: "application/json",
         success: function (data) {
             console.log('data', data);
-            if (data == 0) {
+            if (data==0) {
                 $("#idCheck").attr("value", "Y");
                 console.log("아이디 없음")
                 alert("사용 가능한 아이디 입니다.");

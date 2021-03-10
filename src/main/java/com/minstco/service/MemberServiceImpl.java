@@ -19,9 +19,9 @@ public class MemberServiceImpl implements MemberService {
         return memberVO;
     }
 
-    public int idCheck(String id) {
-        int cnt = memberDAO.idCheck(id);
-        return cnt;
+    public int idCheck(MemberVO memberVO) {
+        int result = memberDAO.idCheck(memberVO);
+        return result;
     }
 
 

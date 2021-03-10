@@ -10,6 +10,6 @@ public interface MemberService {
 
    public MemberVO insertMember  (MemberVO memberVO) throws  Exception;
 
-   public int idCheck (String id) ;
+   public int idCheck (MemberVO memberVO) ;
 
 }

@@ -9,7 +9,7 @@
         values('${id}','${password}','${name}','${address}','${phoneNumber}','${email}','${gender}','C','${0.05}','${0}','${0}',now());
     </insert>
 
-    <select id="idCheck" resultType="int">
+    <select id="idCheck" parameterType="String" resultType="int">
         SELECT COUNT(*) FROM members
         WHERE id = #{id}
     </select>

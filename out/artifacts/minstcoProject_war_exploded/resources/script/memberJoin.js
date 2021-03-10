@@ -49,8 +49,8 @@ function fn_idCheck() {
     var id = document.getElementById('id').value;
     var jsonData ={id :id};
     $.ajax({
-        url: "/member/idCheck",
-        type: "post",
+        url: "idCheck",
+        type: "POST",
         dataType: "json",
         data: jsonData,
         contentType: 'application/json',
@@ -70,6 +70,7 @@ function fn_idCheck() {
         }
     });
 }
+
 
     function checkPassword(id, password, passwordCheck) {
         if (!checkExistData(password, "비밀번호")) {

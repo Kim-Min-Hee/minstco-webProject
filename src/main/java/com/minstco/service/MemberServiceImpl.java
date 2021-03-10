@@ -19,10 +19,9 @@ public class MemberServiceImpl implements MemberService {
         return memberVO;
     }
 
-    public int idCheck(MemberVO memberVO) throws Exception {
-        int result = memberDAO.idCheck(memberVO);
-        System.out.println("service"+result);
-        return result;
+    public int idCheck(String id) {
+        int cnt = memberDAO.idCheck(id);
+        return cnt;
     }
 
 

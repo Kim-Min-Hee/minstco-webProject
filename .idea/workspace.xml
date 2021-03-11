@@ -235,10 +235,27 @@
       <change beforePath="$PROJECT_DIR$/../minstco/src/app/Minstco.java" beforeDir="false" afterPath="$PROJECT_DIR$/../minstco/src/app/Minstco.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../minstco/src/service/Registration.java" beforeDir="false" afterPath="$PROJECT_DIR$/../minstco/src/service/Registration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../minstco/src/vo/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/../minstco/src/vo/Member.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/minstcoProject_war_exploded/WEB-INF/classes/com/minstco/controller/member/MemberController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/minstcoProject_war_exploded/WEB-INF/classes/com/minstco/controller/member/MemberController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/minstcoProject_war_exploded/WEB-INF/classes/com/minstco/dao/MemberDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/minstcoProject_war_exploded/WEB-INF/classes/com/minstco/dao/MemberDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/minstcoProject_war_exploded/WEB-INF/classes/com/minstco/service/MemberService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/minstcoProject_war_exploded/WEB-INF/classes/com/minstco/service/MemberService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/minstcoProject_war_exploded/WEB-INF/classes/com/minstco/service/MemberServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/minstcoProject_war_exploded/WEB-INF/classes/com/minstco/service/MemberServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/minstcoProject_war_exploded/WEB-INF/views/member/join.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/minstcoProject_war_exploded/WEB-INF/views/member/join.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/minstcoProject_war_exploded/resources/script/memberJoin.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/minstcoProject_war_exploded/resources/script/memberJoin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/minstco/controller/member/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/minstco/controller/member/MemberController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/minstco/dao/MemberDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/minstco/dao/MemberDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/minstco/service/MemberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/minstco/service/MemberService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/minstco/service/MemberServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/minstco/service/MemberServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/databases/query.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/databases/query.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/minstco/controller/member/MemberController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/minstco/controller/member/MemberController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/minstco/dao/MemberDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/minstco/dao/MemberDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/minstco/service/MemberService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/minstco/service/MemberService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/minstco/service/MemberServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/minstco/service/MemberServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/databases/query.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/databases/query.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/views/member/join.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/views/member/join.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/views/member/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/views/member/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/resources/script/memberJoin.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/resources/script/memberJoin.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../untitled/untitled.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../untitled/web/WEB-INF/applicationContext.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../untitled/web/WEB-INF/dispatcher-servlet.xml" beforeDir="false" />
@@ -257,8 +274,8 @@
       <list>
         <option value="spring-beans.schema" />
         <option value="Interface" />
-        <option value="Jsp File" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -304,7 +321,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.idesettings.emmet.css" />
@@ -322,6 +339,17 @@
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Tomcat 9.0.43" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.43" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
@@ -394,6 +422,31 @@
         </option>
       </method>
     </configuration>
+    <configuration default="true" type="aws.lambda" factoryName="Local">
+      <option name="credentialProviderId" />
+      <option name="regionId" />
+      <option name="debugHost" value="localhost" />
+      <option name="environmentVariables">
+        <map />
+      </option>
+      <option name="handler" />
+      <option name="logicalFunctionName" />
+      <option name="memorySize" value="128" />
+      <option name="runtime" />
+      <option name="templateFile" />
+      <option name="timeout" value="300" />
+      <option name="useTemplate" value="false" />
+      <option name="input" />
+      <option name="inputIsFile" value="false" />
+      <sam>
+        <option name="additionalBuildArgs" />
+        <option name="additionalLocalArgs" />
+        <option name="buildInContainer" value="false" />
+        <option name="dockerNetwork" />
+        <option name="skipImagePull" value="false" />
+      </sam>
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -432,7 +485,8 @@
       <workItem from="1615350279727" duration="11634000" />
       <workItem from="1615365497320" duration="341000" />
       <workItem from="1615365859923" duration="588000" />
-      <workItem from="1615366453648" duration="896000" />
+      <workItem from="1615366453648" duration="6413000" />
+      <workItem from="1615448823879" duration="4148000" />
     </task>
     <servers />
   </component>
@@ -472,10 +526,10 @@
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
     <state x="360" y="231" width="1071" height="720" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1792.1095@0.25.1792.1095" timestamp="1614660281044" />
-    <state x="709" y="273" key="#com.intellij.ide.util.MemberChooser" timestamp="1615183999877">
+    <state x="709" y="273" key="#com.intellij.ide.util.MemberChooser" timestamp="1615452269314">
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
-    <state x="709" y="273" key="#com.intellij.ide.util.MemberChooser/0.25.1792.1095@0.25.1792.1095" timestamp="1615183999877" />
+    <state x="709" y="273" key="#com.intellij.ide.util.MemberChooser/0.25.1792.1095@0.25.1792.1095" timestamp="1615452269314" />
     <state x="509" y="226" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1613978480534">
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
@@ -508,54 +562,54 @@
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
     <state x="634" y="323" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.25.1792.1095@0.25.1792.1095" timestamp="1615366479316" />
-    <state width="1204" height="360" key="GridCell.Tab.0.bottom" timestamp="1615367404790">
+    <state width="1204" height="360" key="GridCell.Tab.0.bottom" timestamp="1615454514206">
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
-    <state width="1204" height="360" key="GridCell.Tab.0.bottom/0.25.1792.1095@0.25.1792.1095" timestamp="1615367404790" />
-    <state width="1204" height="360" key="GridCell.Tab.0.center" timestamp="1615367404789">
+    <state width="1204" height="360" key="GridCell.Tab.0.bottom/0.25.1792.1095@0.25.1792.1095" timestamp="1615454514206" />
+    <state width="1204" height="360" key="GridCell.Tab.0.center" timestamp="1615454514206">
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
-    <state width="1204" height="360" key="GridCell.Tab.0.center/0.25.1792.1095@0.25.1792.1095" timestamp="1615367404789" />
-    <state width="1204" height="360" key="GridCell.Tab.0.left" timestamp="1615367404788">
+    <state width="1204" height="360" key="GridCell.Tab.0.center/0.25.1792.1095@0.25.1792.1095" timestamp="1615454514206" />
+    <state width="1204" height="360" key="GridCell.Tab.0.left" timestamp="1615454514205">
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
-    <state width="1204" height="360" key="GridCell.Tab.0.left/0.25.1792.1095@0.25.1792.1095" timestamp="1615367404788" />
-    <state width="1204" height="360" key="GridCell.Tab.0.right" timestamp="1615367404789">
+    <state width="1204" height="360" key="GridCell.Tab.0.left/0.25.1792.1095@0.25.1792.1095" timestamp="1615454514205" />
+    <state width="1204" height="360" key="GridCell.Tab.0.right" timestamp="1615454514206">
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
-    <state width="1204" height="360" key="GridCell.Tab.0.right/0.25.1792.1095@0.25.1792.1095" timestamp="1615367404789" />
-    <state width="1204" height="360" key="GridCell.Tab.1.bottom" timestamp="1615367404706">
+    <state width="1204" height="360" key="GridCell.Tab.0.right/0.25.1792.1095@0.25.1792.1095" timestamp="1615454514206" />
+    <state width="1204" height="360" key="GridCell.Tab.1.bottom" timestamp="1615454514078">
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
-    <state width="1204" height="360" key="GridCell.Tab.1.bottom/0.25.1792.1095@0.25.1792.1095" timestamp="1615367404706" />
-    <state width="1204" height="360" key="GridCell.Tab.1.center" timestamp="1615367404705">
+    <state width="1204" height="360" key="GridCell.Tab.1.bottom/0.25.1792.1095@0.25.1792.1095" timestamp="1615454514078" />
+    <state width="1204" height="360" key="GridCell.Tab.1.center" timestamp="1615454514077">
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
-    <state width="1204" height="360" key="GridCell.Tab.1.center/0.25.1792.1095@0.25.1792.1095" timestamp="1615367404705" />
-    <state width="1204" height="360" key="GridCell.Tab.1.left" timestamp="1615367404705">
+    <state width="1204" height="360" key="GridCell.Tab.1.center/0.25.1792.1095@0.25.1792.1095" timestamp="1615454514077" />
+    <state width="1204" height="360" key="GridCell.Tab.1.left" timestamp="1615454514076">
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
-    <state width="1204" height="360" key="GridCell.Tab.1.left/0.25.1792.1095@0.25.1792.1095" timestamp="1615367404705" />
-    <state width="1204" height="360" key="GridCell.Tab.1.right" timestamp="1615367404705">
+    <state width="1204" height="360" key="GridCell.Tab.1.left/0.25.1792.1095@0.25.1792.1095" timestamp="1615454514076" />
+    <state width="1204" height="360" key="GridCell.Tab.1.right" timestamp="1615454514077">
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
-    <state width="1204" height="360" key="GridCell.Tab.1.right/0.25.1792.1095@0.25.1792.1095" timestamp="1615367404705" />
-    <state width="1204" height="360" key="GridCell.Tab.2.bottom" timestamp="1615367404707">
+    <state width="1204" height="360" key="GridCell.Tab.1.right/0.25.1792.1095@0.25.1792.1095" timestamp="1615454514077" />
+    <state width="1204" height="360" key="GridCell.Tab.2.bottom" timestamp="1615454514076">
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
-    <state width="1204" height="360" key="GridCell.Tab.2.bottom/0.25.1792.1095@0.25.1792.1095" timestamp="1615367404707" />
-    <state width="1204" height="360" key="GridCell.Tab.2.center" timestamp="1615367404706">
+    <state width="1204" height="360" key="GridCell.Tab.2.bottom/0.25.1792.1095@0.25.1792.1095" timestamp="1615454514076" />
+    <state width="1204" height="360" key="GridCell.Tab.2.center" timestamp="1615454514075">
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
-    <state width="1204" height="360" key="GridCell.Tab.2.center/0.25.1792.1095@0.25.1792.1095" timestamp="1615367404706" />
-    <state width="1204" height="360" key="GridCell.Tab.2.left" timestamp="1615367404706">
+    <state width="1204" height="360" key="GridCell.Tab.2.center/0.25.1792.1095@0.25.1792.1095" timestamp="1615454514075" />
+    <state width="1204" height="360" key="GridCell.Tab.2.left" timestamp="1615454514074">
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
-    <state width="1204" height="360" key="GridCell.Tab.2.left/0.25.1792.1095@0.25.1792.1095" timestamp="1615367404706" />
-    <state width="1204" height="360" key="GridCell.Tab.2.right" timestamp="1615367404706">
+    <state width="1204" height="360" key="GridCell.Tab.2.left/0.25.1792.1095@0.25.1792.1095" timestamp="1615454514074" />
+    <state width="1204" height="360" key="GridCell.Tab.2.right" timestamp="1615454514075">
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
-    <state width="1204" height="360" key="GridCell.Tab.2.right/0.25.1792.1095@0.25.1792.1095" timestamp="1615367404706" />
+    <state width="1204" height="360" key="GridCell.Tab.2.right/0.25.1792.1095@0.25.1792.1095" timestamp="1615454514075" />
     <state width="1204" height="259" key="GridCell.Tab.3.bottom" timestamp="1615365476943">
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
@@ -576,10 +630,10 @@
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
     <state x="434" y="231" key="Maven.ArtifactSearchDialog/0.25.1792.1095@0.25.1792.1095" timestamp="1615366445584" />
-    <state x="86" y="92" width="1551" height="843" key="SettingsEditor" timestamp="1615366436007">
+    <state x="86" y="92" width="1551" height="843" key="SettingsEditor" timestamp="1615448036199">
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
-    <state x="86" y="92" width="1551" height="843" key="SettingsEditor/0.25.1792.1095@0.25.1792.1095" timestamp="1615366436007" />
+    <state x="86" y="92" width="1551" height="843" key="SettingsEditor/0.25.1792.1095@0.25.1792.1095" timestamp="1615448036199" />
     <state x="100" y="125" width="1592" height="895" key="dock-window-1" timestamp="1614407744569">
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
@@ -588,6 +642,10 @@
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
     <state x="302" y="146" key="new project wizard/0.25.1792.1095@0.25.1792.1095" timestamp="1614046238350" />
+    <state x="680" y="347" key="refactoring.ChangeSignatureDialog" timestamp="1615446333882">
+      <screen x="0" y="25" width="1792" height="1095" />
+    </state>
+    <state x="680" y="347" key="refactoring.ChangeSignatureDialog/0.25.1792.1095@0.25.1792.1095" timestamp="1615446333882" />
     <state x="561" y="269" width="670" height="676" key="search.everywhere.popup" timestamp="1615179566715">
       <screen x="0" y="25" width="1792" height="1095" />
     </state>

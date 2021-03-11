@@ -8,11 +8,14 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>login page</title>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="/script/login.js"></script>
 </head>
 <body>
 <div class="wrapper">
-    <form action="/member/loginTest" method="post">
+    <form name="login" method="post">
         <div class="wrap">
             <div class="login_wrap">
                 <span>로그인</span>
@@ -32,7 +35,18 @@
                 </div>
             </div>
         </div>
-        <button type="submit">로그인</button>
+        <button type="button" id="loginButton">로그인</button>
+        <c:if test="${msg == 'failed'}">
+            <div style="color: red">
+                아이디 비밀번호가 일치 하지 않습니다.
+            </div>
+        </c:if>
+        <c:if test="${msg == 'logout'}">
+            <div style="color: red">
+                로그아웃 되었습니다.
+            </div>
+        </c:if>
+
     </form>
 </div>
 </body>

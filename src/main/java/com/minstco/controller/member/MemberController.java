@@ -1,8 +1,5 @@
 package com.minstco.controller.member;
 
-import com.minstco.dao.MemberDAO;
-import org.apache.ibatis.session.SqlSession;
-import org.json.simple.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import com.minstco.service.MemberService;
 import com.minstco.vo.LoginVO;
@@ -11,6 +8,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
+import javax.servlet.http.HttpSession;
 
 
 @RequestMapping("/member/")
@@ -27,12 +25,14 @@ public ModelAndView memberWrite(){
     modelAndView.setViewName("member/join");
     return modelAndView;
 }
+
     @RequestMapping(value = "idCheck" , method = RequestMethod.POST)
     @ResponseBody
-    public ModelAndView  idCheck(@RequestBody String id){
-        System.out.println(id);
-        memberService.idCheck(id);
-        return modelAndView;
+    public int idCheck(@RequestBody MemberVO memberVO)throws Exception{
+        System.out.println(memberVO);
+        int result = memberService.idCheck(memberVO);
+        System.out.println(result);
+        return result;
     }
 
 @RequestMapping(value = "join",method = RequestMethod.POST)
@@ -56,6 +56,19 @@ public ModelAndView memberInsert(MemberVO memberVO) throws Exception {
 public ModelAndView loginWrite(){
         modelAndView.setViewName("member/login");
         return modelAndView;
+}
+
+public ModelAndView loginCheck(@ModelAttribute MemberVO memberVO , HttpSession session){
+        boolean result =memberService.loginCheck(memberVO,session);
+
+    if (result == true) {
+        modelAndView.setViewName("main");
+        modelAndView.addObject("msg","success");
+    }else{
+        modelAndView.setViewName("member/login");
+        modelAndView.addObject("msg","failed");
+    }
+    return modelAndView;
 }
 
     @RequestMapping(value = "loginTest",method = RequestMethod.POST)

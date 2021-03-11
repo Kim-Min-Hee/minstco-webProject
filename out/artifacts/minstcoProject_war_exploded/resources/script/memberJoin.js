@@ -47,24 +47,20 @@ function checkAll() {
     }
 function fn_idCheck() {
     var id = document.getElementById('id').value;
-    var jsonData ={id :id};
     $.ajax({
-        async: true,
         url: "idCheck",
         type: "POST",
         dataType: "json",
-        data: jsonData,
+        data: {id : id},
         contentType: "application/json",
-        success: function (data) {
-            console.log('data', data);
-            if (data==0) {
-                $("#idCheck").attr("value", "Y");
-                console.log("아이디 없음")
-                alert("사용 가능한 아이디 입니다.");
-            } else if (data == 1) {
-                console.log("아이디 있음");
+        success: function (result) {
+            if(result == 1){
+                alert("사용가능한 아이디 입니다.");
+
+            }else{
                 alert("이미 사용중인 아이디 입니다.");
             }
+            console.log('data', result);
         },
         error: function (data) {
             console.log('error', data)

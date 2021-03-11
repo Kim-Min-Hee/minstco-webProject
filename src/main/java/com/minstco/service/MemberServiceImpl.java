@@ -6,6 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import com.minstco.vo.MemberVO;
 
+import javax.servlet.http.HttpSession;
+
 @Service
 public class MemberServiceImpl implements MemberService {
 
@@ -19,9 +21,24 @@ public class MemberServiceImpl implements MemberService {
         return memberVO;
     }
 
-    public int idCheck(String id) {
-        int result = memberDAO.idCheck(id);
+    public int idCheck(MemberVO memberVO)throws Exception {
+        int result = memberDAO.idCheck(memberVO);
+        System.out.println(result);
         return result;
+    }
+
+    public boolean loginCheck(MemberVO memberVO, HttpSession session) {
+        boolean result = memberDAO.loginCheck(memberVO);
+        if(result){
+            MemberVO memberVO1 = viewMember(memberVO);
+            session.setAttribute("id",memberVO1.getId());
+            session.setAttribute("name",memberVO1.getName());
+        }
+        return result;
+    }
+
+    public MemberVO viewMember(MemberVO memberVO) {
+        return memberDAO.viewMember(memberVO);
     }
 
 

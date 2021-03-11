@@ -16,8 +16,18 @@ public class MemberDAO {
          return sqlSession.insert("member.memberInsert",memberVO);
     }
 
-    public int  idCheck(String id){
-        int result =  sqlSession.selectOne("member.idCheck",id);
+    public int  idCheck(MemberVO memberVO) throws Exception{
+        int result =  sqlSession.selectOne("member.idCheck",memberVO);
+        System.out.println(result);
         return result;
+    }
+
+    public boolean loginCheck(MemberVO memberVO){
+        String name = sqlSession.selectOne("member.loginCheck",memberVO);
+        return (name == null) ? false : true;
+    }
+
+    public MemberVO viewMember(MemberVO memberVO){
+        return sqlSession.selectOne("member.viewMember",memberVO);
     }
 }

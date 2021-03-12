@@ -23,7 +23,8 @@ public class MemberDAO {
     }
 
     public boolean loginCheck(MemberVO memberVO){
-        String name = sqlSession.selectOne("member.loginCheck",memberVO);
+        String name= sqlSession.selectOne("member.loginCheck",memberVO);
+        System.out.println(name);
         return (name == null) ? false : true;
     }
 

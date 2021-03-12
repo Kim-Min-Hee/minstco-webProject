@@ -14,8 +14,8 @@
         WHERE id = #{id}
     </select>
     
-    <select id="loginCheck" resultType="String">
-        SELECT name from members
+    <select id="loginCheck" resultType="String" >
+        SELECT name FROM members
         WHERE id = #{id} AND password = #{password}
     </select>
     

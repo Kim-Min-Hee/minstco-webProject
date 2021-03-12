@@ -58,9 +58,10 @@ public ModelAndView loginWrite(){
         return modelAndView;
 }
 
+@RequestMapping(value = "loginCheck", method = RequestMethod.POST)
 public ModelAndView loginCheck(@ModelAttribute MemberVO memberVO , HttpSession session){
+    System.out.println(memberVO.getId());
         boolean result =memberService.loginCheck(memberVO,session);
-
     if (result == true) {
         modelAndView.setViewName("main");
         modelAndView.addObject("msg","success");

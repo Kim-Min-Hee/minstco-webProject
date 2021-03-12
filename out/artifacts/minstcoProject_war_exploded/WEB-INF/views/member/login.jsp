@@ -11,11 +11,11 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>login page</title>
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script src="/script/login.js"></script>
+    <script src="${pageContext.request.contextPath}/script/login.js"></script>
 </head>
 <body>
 <div class="wrapper">
-    <form name="login" method="post">
+    <form action="/member/loginCheck"  method="post" name="loginCheck">
         <div class="wrap">
             <div class="login_wrap">
                 <span>로그인</span>
@@ -24,18 +24,19 @@
                 <div class="id_wrap">
                     <div class="id_name">아이디</div>
                     <div class="id_input_box">
-                        <input class="id_input" name="id">
+                        <input class="id_input" name="id" id="id">
                     </div>
                 </div>
                 <div class="password_wrap">
                     <div class="password_name">비밀번호</div>
                     <div class="password_input_box">
-                        <input class="password_input" name="password">
+                        <input class="password_input" name="password" id="password">
                     </div>
                 </div>
             </div>
         </div>
-        <button type="button" id="loginButton">로그인</button>
+        <div class="login_button">
+        <button type="button" id="loginButton" >로그인</button>
         <c:if test="${msg == 'failed'}">
             <div style="color: red">
                 아이디 비밀번호가 일치 하지 않습니다.
@@ -46,7 +47,7 @@
                 로그아웃 되었습니다.
             </div>
         </c:if>
-
+        </div>
     </form>
 </div>
 </body>

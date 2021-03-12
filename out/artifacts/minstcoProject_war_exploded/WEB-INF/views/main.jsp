@@ -16,6 +16,10 @@
 
 </head>
 <body>
+<%--<%@include file="menu.jsp"%>--%>
+<c:if test="${msg == 'success'}">
+    <h2>${sessionScope.name}(${sessionScope.id})님 환영 합니다.</h2>
+</c:if>
  <div class="wrapper">
      <div class="wrap">
          <div class="top-gnb_area">

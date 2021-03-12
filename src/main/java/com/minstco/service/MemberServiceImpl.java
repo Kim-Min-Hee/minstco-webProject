@@ -28,7 +28,9 @@ public class MemberServiceImpl implements MemberService {
     }
 
     public boolean loginCheck(MemberVO memberVO, HttpSession session) {
+        System.out.println("service : "+memberVO.getId());
         boolean result = memberDAO.loginCheck(memberVO);
+        System.out.println(result);
         if(result){
             MemberVO memberVO1 = viewMember(memberVO);
             session.setAttribute("id",memberVO1.getId());

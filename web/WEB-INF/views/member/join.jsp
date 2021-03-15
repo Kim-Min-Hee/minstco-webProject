@@ -26,7 +26,7 @@
                 <div class="id_name">아이디</div>
                 <div class="id_input_box">
                     <input class="id_input" id="id" name="id">
-                    <button type="button" id="idCheck" onclick="fn_idCheck()">아이디 중복 검사</button>
+                    <button class="idCheck" type="button" id="idCheck" onclick="fn_idCheck()">아이디 중복 검사</button>
                 </div>
             </div>
 <%--            <div class="join_button_wrap">--%>

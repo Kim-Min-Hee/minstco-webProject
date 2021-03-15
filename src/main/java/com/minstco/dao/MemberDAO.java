@@ -1,6 +1,5 @@
 package com.minstco.dao;
 
-
 import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
@@ -16,9 +15,8 @@ public class MemberDAO {
          return sqlSession.insert("member.memberInsert",memberVO);
     }
 
-    public int  idCheck(MemberVO memberVO) throws Exception{
-        int result =  sqlSession.selectOne("member.idCheck",memberVO);
-        System.out.println(result);
+    public int idCheck(MemberVO memberVO) throws Exception{
+        int result = sqlSession.selectOne("member.idCheck",memberVO);
         return result;
     }
 

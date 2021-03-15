@@ -2,6 +2,7 @@ package com.minstco.service;
 
 
 import com.minstco.dao.MemberDAO;
+import org.json.simple.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import com.minstco.vo.MemberVO;
@@ -22,9 +23,10 @@ public class MemberServiceImpl implements MemberService {
     }
 
     public int idCheck(MemberVO memberVO)throws Exception {
-        int result = memberDAO.idCheck(memberVO);
-        System.out.println(result);
-        return result;
+        System.out.println("service : "+memberVO.getId());
+       int result = memberDAO.idCheck(memberVO);
+        System.out.println("service : "+result);
+        return memberDAO.idCheck(memberVO);
     }
 
     public boolean loginCheck(MemberVO memberVO, HttpSession session) {

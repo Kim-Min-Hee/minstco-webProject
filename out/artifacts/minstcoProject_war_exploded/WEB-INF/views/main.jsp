@@ -64,6 +64,7 @@
 <%--                         <a href="/member/logout">로그아웃</a>--%>
                      </div>
                  </c:if>
+             </div>
              <div class="clearfix"></div>
              </div>
          <div class="navi_bar_area">

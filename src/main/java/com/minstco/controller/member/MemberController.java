@@ -7,7 +7,6 @@ import com.minstco.vo.MemberVO;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
-
 import javax.servlet.http.HttpSession;
 
 
@@ -26,14 +25,13 @@ public ModelAndView memberWrite(){
     return modelAndView;
 }
 
-    @RequestMapping(value = "idCheck" , method = RequestMethod.POST)
-    @ResponseBody
-    public int idCheck(@RequestBody MemberVO memberVO)throws Exception{
-        System.out.println(memberVO);
-        int result = memberService.idCheck(memberVO);
-        System.out.println(result);
-        return result;
-    }
+@ResponseBody
+@RequestMapping(value = "idCheck" , method = RequestMethod.POST)
+    public int idCheck (MemberVO memberVO) throws Exception {
+    System.out.println("controller : "+memberVO.getId());
+    int result = memberService.idCheck(memberVO);
+    return result;
+}
 
 @RequestMapping(value = "join",method = RequestMethod.POST)
 @ResponseBody

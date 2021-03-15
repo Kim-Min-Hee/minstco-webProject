@@ -42,7 +42,7 @@
 </div>
 <script>
     var msg = '${msg}';
-    
+
 </script>
 </body>
 </html>

@@ -51,19 +51,16 @@ function fn_idCheck() {
         url: "idCheck",
         type: "POST",
         dataType: "json",
-        data: {id : id},
-        contentType: "application/json",
-        success: function (result) {
-            if(result == 1){
-                alert("사용가능한 아이디 입니다.");
-
-            }else{
+        data: {"id" : id},
+        success: function (data) {
+            if(data>0){
                 alert("이미 사용중인 아이디 입니다.");
+            }else {
+                alert("사용 가능한 아이디 입니다.")
             }
-            console.log('data', result);
         },
-        error: function (data) {
-            console.log('error', data)
+        error : function () {
+           alert("ajax failed");
         }
     });
 }

@@ -37,18 +37,12 @@
         </div>
         <div class="login_button">
         <button type="button" id="loginButton" >로그인</button>
-        <c:if test="${msg == 'failed'}">
-            <div style="color: red">
-                아이디 비밀번호가 일치 하지 않습니다.
-            </div>
-        </c:if>
-        <c:if test="${msg == 'logout'}">
-            <div style="color: red">
-                로그아웃 되었습니다.
-            </div>
-        </c:if>
         </div>
     </form>
 </div>
+<script>
+    var msg = '${msg}';
+
+</script>
 </body>
 </html>

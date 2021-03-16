@@ -50,11 +50,12 @@ function fn_idCheck() {
     $.ajax({
         url: "idCheck",
         type: "POST",
-        dataType: "json",
+        // dataType: "json",
         data: {"id" : id},
         success: function (data) {
             if(data>0){
                 alert("이미 사용중인 아이디 입니다.");
+                console.log(id);
             }else {
                 alert("사용 가능한 아이디 입니다.")
             }

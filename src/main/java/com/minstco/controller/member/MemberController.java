@@ -1,5 +1,7 @@
 package com.minstco.controller.member;
 
+import com.sun.tools.internal.xjc.reader.xmlschema.bindinfo.BIConversion;
+import org.json.simple.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import com.minstco.service.MemberService;
 import com.minstco.vo.LoginVO;
@@ -8,6 +10,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 import javax.servlet.http.HttpSession;
+import java.util.List;
+import java.util.Map;
 
 
 @RequestMapping("/member/")
@@ -25,13 +29,28 @@ public ModelAndView memberWrite(){
     return modelAndView;
 }
 
+//@ResponseBody
+//@RequestMapping(value = "idCheck" , method = RequestMethod.POST)
+//    public String idCheck (MemberVO memberVO) throws Exception {
+//    System.out.println("controller : "+memberVO.getId());
+//   int result =  memberService.idCheck(memberVO);
+//    return String.valueOf(result);
+//}
+
 @ResponseBody
 @RequestMapping(value = "idCheck" , method = RequestMethod.POST)
-    public int idCheck (MemberVO memberVO) throws Exception {
+    public ModelAndView idCheck (MemberVO memberVO) throws Exception {
     System.out.println("controller : "+memberVO.getId());
-    int result = memberService.idCheck(memberVO);
-    return result;
+   memberService.idCheck(memberVO);
+   if(!memberVO.getId().equals("null")){
+       modelAndView.addObject("status",memberVO);
+    }else{
+       modelAndView.addObject("status",null);
+   }
+    return modelAndView;
 }
+
+
 
 @RequestMapping(value = "join",method = RequestMethod.POST)
 @ResponseBody

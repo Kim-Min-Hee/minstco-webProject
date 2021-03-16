@@ -14,7 +14,8 @@
         FROM members
         WHERE id = #{id}
     </select>
-    
+
+
     <select id="loginCheck" resultType="String" >
         SELECT name FROM members
         WHERE id = #{id} AND password = #{password}

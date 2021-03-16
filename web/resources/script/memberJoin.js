@@ -50,7 +50,9 @@ function fn_idCheck() {
     $.ajax({
         url: "idCheck",
         type: "POST",
-        // dataType: "json",
+        async: true,
+        //contentType:"application/x-www-form-urlencoded; charset = utf-8",
+        //dataType: "json",
         data: {"id" : id},
         success: function (data) {
             if(data>0){
@@ -123,7 +125,7 @@ function fn_idCheck() {
         if (!checkExistData(phoneNumber, "휴대폰")) {
             return false;
         }
-        var phoneNumberEx = /^\d{2,3}-\d{3,4}-\d{4}$/;
+         var phoneNumberEx = /^\d{2,3}-\d{3,4}-\d{4}$/;
         if (!phoneNumberEx.test(phoneNumber)) {
             alert("휴대폰번호는 숫자로만 작성 부탁 드립니다.");
             return false;

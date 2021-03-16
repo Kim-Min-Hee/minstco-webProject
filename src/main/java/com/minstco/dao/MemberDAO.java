@@ -15,15 +15,11 @@ public class MemberDAO {
          return sqlSession.insert("member.memberInsert",memberVO);
     }
 
-//    public int idCheck(MemberVO memberVO) throws Exception{
-//        int result = sqlSession.selectOne("member.idCheck",memberVO);
-//        return result;
-//    }
-
-    public MemberVO idCheck(MemberVO memberVO) throws Exception{
-        sqlSession.selectOne("member.joinCheck",memberVO);
-        return memberVO;
+    public int idCheck(MemberVO memberVO) throws Exception{
+        int result = sqlSession.selectOne("member.idCheck",memberVO);
+        return result;
     }
+
 
     public boolean loginCheck(MemberVO memberVO){
         String name= sqlSession.selectOne("member.loginCheck",memberVO);

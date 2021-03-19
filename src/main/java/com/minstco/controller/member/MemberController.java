@@ -12,6 +12,7 @@ import org.springframework.web.servlet.ModelAndView;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.PrintWriter;
+import java.util.HashMap;
 
 
 @RequestMapping("/member/")
@@ -29,13 +30,22 @@ public ModelAndView memberWrite(){
     return modelAndView;
 }
 
-@ResponseBody
-@RequestMapping(value = "idCheck" , method = RequestMethod.POST)
+//@ResponseBody
+//@RequestMapping(value = "idCheck" , method = RequestMethod.POST)
+//    public String idCheck (MemberVO memberVO) throws Exception {
+//    System.out.println("controller : "+memberVO.getId());
+//   int result =  memberService.idCheck(memberVO);
+//    return String.valueOf(result);
+//}
+
+    @ResponseBody
+    @RequestMapping(value = "idCheck" , method = RequestMethod.POST)
     public String idCheck (MemberVO memberVO) throws Exception {
-    System.out.println("controller : "+memberVO.getId());
-   int result =  memberService.idCheck(memberVO);
-    return String.valueOf(result);
-}
+        System.out.println("controller : "+memberVO.getId());
+        String result =  memberService.idCheck(memberVO);
+        return result;
+    }
+
 
 
 @RequestMapping(value = "join",method = RequestMethod.POST)

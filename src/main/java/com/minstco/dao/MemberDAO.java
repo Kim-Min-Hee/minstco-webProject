@@ -5,6 +5,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import com.minstco.vo.MemberVO;
 
+import java.util.HashMap;
+import java.util.List;
+
 @Repository
 public class MemberDAO {
 
@@ -15,11 +18,15 @@ public class MemberDAO {
          return sqlSession.insert("member.memberInsert",memberVO);
     }
 
-    public int idCheck(MemberVO memberVO) throws Exception{
-        int result = sqlSession.selectOne("member.idCheck",memberVO);
-        return result;
-    }
-
+//    public int idCheck(MemberVO memberVO) throws Exception{
+//        int result = sqlSession.selectOne("member.idCheck",memberVO);
+//        return result;
+//    }
+public String idCheck(MemberVO memberVO) throws Exception{
+    String result = sqlSession.selectOne("member.idCheck",memberVO);
+    System.out.println(memberVO.getName());
+    return result;
+}
 
     public boolean loginCheck(MemberVO memberVO){
         String name= sqlSession.selectOne("member.loginCheck",memberVO);

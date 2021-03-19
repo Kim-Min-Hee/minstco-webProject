@@ -77,8 +77,8 @@ function fn_idCheck() {
         contentType:"application/x-www-form-urlencoded; charset = utf-8",
         //dataType: "json",
         data: {"id" : id},
-        success: function (data) {
-            console.log(data.id);
+        success: function (result) {
+            console.log(result.name);
         },
         error : function () {
             alert("ajax failed");

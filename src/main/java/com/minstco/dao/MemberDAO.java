@@ -22,10 +22,10 @@ public class MemberDAO {
 //        int result = sqlSession.selectOne("member.idCheck",memberVO);
 //        return result;
 //    }
-public String idCheck(MemberVO memberVO) throws Exception{
-    String result = sqlSession.selectOne("member.idCheck",memberVO);
-    System.out.println(memberVO.getName());
-    return result;
+public MemberVO idCheck(MemberVO memberVO) throws Exception{
+    MemberVO memberVO1 = sqlSession.selectOne("member.idCheck",memberVO);
+    System.out.println("dao : "+memberVO1.getName());
+    return memberVO1;
 }
 
     public boolean loginCheck(MemberVO memberVO){

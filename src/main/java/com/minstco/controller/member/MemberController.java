@@ -1,6 +1,5 @@
 package com.minstco.controller.member;
 
-import org.json.simple.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import com.minstco.service.MemberService;
 import com.minstco.vo.LoginVO;
@@ -9,10 +8,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
-import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-import java.io.PrintWriter;
-import java.util.HashMap;
 
 
 @RequestMapping("/member/")
@@ -40,10 +36,10 @@ public ModelAndView memberWrite(){
 
     @ResponseBody
     @RequestMapping(value = "idCheck" , method = RequestMethod.POST)
-    public String idCheck (MemberVO memberVO) throws Exception {
+    public MemberVO idCheck (MemberVO memberVO) throws Exception {
         System.out.println("controller : "+memberVO.getId());
-        String result =  memberService.idCheck(memberVO);
-        return result;
+        memberService.idCheck(memberVO);
+        return memberVO;
     }
 
 

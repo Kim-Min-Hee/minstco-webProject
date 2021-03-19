@@ -2,15 +2,11 @@ package com.minstco.service;
 
 
 import com.minstco.dao.MemberDAO;
-import org.apache.ibatis.session.SqlSession;
-import org.json.simple.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import com.minstco.vo.MemberVO;
 
 import javax.servlet.http.HttpSession;
-import java.util.HashMap;
-import java.util.List;
 
 @Service
 public class MemberServiceImpl implements MemberService {
@@ -32,11 +28,11 @@ public class MemberServiceImpl implements MemberService {
 //        return memberDAO.idCheck(memberVO);
 //    }
 
-    public String idCheck(MemberVO memberVO)throws Exception {
+    public MemberVO idCheck(MemberVO memberVO)throws Exception {
         System.out.println("service : "+memberVO.getId());
-        String result = memberDAO.idCheck(memberVO);
-        System.out.println("service1 : "+result);
-        return memberDAO.idCheck(memberVO);
+        MemberVO result = memberDAO.idCheck(memberVO);
+        System.out.println("service1 : "+result.getName());
+        return result;
     }
 
 

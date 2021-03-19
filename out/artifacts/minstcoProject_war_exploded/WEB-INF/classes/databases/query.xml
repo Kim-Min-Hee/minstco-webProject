@@ -16,7 +16,7 @@
 <!--    </select>-->
 
     <select id="idCheck" resultType="MemberVO">
-        SELECT name FROM members
+        SELECT id,name,phoneNumber FROM members
         WHERE id = #{id}
     </select>
 

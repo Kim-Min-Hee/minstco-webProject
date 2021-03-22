@@ -45,29 +45,6 @@ function checkAll() {
         }
         return true;
     }
-// function fn_idCheck() {
-//     var id = document.getElementById('id').value;
-//     $.ajax({
-//         url: "idCheck",
-//         type: "POST",
-//         async: true,
-//         contentType:"application/x-www-form-urlencoded; charset = utf-8",
-//         dataType: "json",
-//         data: {"id" : id},
-//         success: function (data) {
-//             if(data>0){
-//                 alert("이미 사용중인 아이디 입니다.");
-//                 console.log(id);
-//             }else {
-//                 alert("사용 가능한 아이디 입니다.")
-//             }
-//         },
-//         error : function () {
-//            alert("ajax failed");
-//         }
-//     });
-// }
-
 function fn_idCheck() {
     var id = document.getElementById('id').value;
     $.ajax({
@@ -75,16 +52,22 @@ function fn_idCheck() {
         type: "POST",
         async: true,
         contentType:"application/x-www-form-urlencoded; charset = utf-8",
-        //dataType: "json",
+        dataType: "json",
         data: {"id" : id},
-        success: function (result) {
-            console.log(result.name);
+        success: function (data) {
+            if(data>0){
+                alert("이미 사용중인 아이디 입니다.");
+                console.log(id);
+            }else {
+                alert("사용 가능한 아이디 입니다.")
+            }
         },
         error : function () {
-            alert("ajax failed");
+           alert("ajax failed");
         }
     });
 }
+
 
 
     function checkPassword(id, password, passwordCheck) {

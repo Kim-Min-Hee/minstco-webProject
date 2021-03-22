@@ -9,16 +9,12 @@
         values('${id}','${password}','${name}','${address}','${phoneNumber}','${email}','${gender}','C','${0.05}','${0}','${0}',now());
     </insert>
 
-<!--    <select id="idCheck"  resultType="int">-->
-<!--        SELECT COUNT(*)-->
-<!--        FROM members-->
-<!--        WHERE id = #{id}-->
-<!--    </select>-->
-
-    <select id="idCheck" resultType="MemberVO">
-        SELECT id,name,phoneNumber FROM members
+    <select id="idCheck"  resultType="int">
+        SELECT COUNT(*)
+        FROM members
         WHERE id = #{id}
     </select>
+
 
 
     <select id="loginCheck" resultType="String" >

@@ -26,23 +26,13 @@ public ModelAndView memberWrite(){
     return modelAndView;
 }
 
-//@ResponseBody
-//@RequestMapping(value = "idCheck" , method = RequestMethod.POST)
-//    public String idCheck (MemberVO memberVO) throws Exception {
-//    System.out.println("controller : "+memberVO.getId());
-//   int result =  memberService.idCheck(memberVO);
-//    return String.valueOf(result);
-//}
-
-    @ResponseBody
-    @RequestMapping(value = "idCheck" , method = RequestMethod.POST)
-    public MemberVO idCheck (MemberVO memberVO) throws Exception {
-        System.out.println("controller : "+memberVO.getId());
-        memberService.idCheck(memberVO);
-        return memberVO;
-    }
-
-
+@ResponseBody
+@RequestMapping(value = "idCheck" , method = RequestMethod.POST)
+    public String idCheck (MemberVO memberVO) throws Exception {
+    System.out.println("controller : "+memberVO.getId());
+   int result =  memberService.idCheck(memberVO);
+    return String.valueOf(result);
+}
 
 @RequestMapping(value = "join",method = RequestMethod.POST)
 @ResponseBody

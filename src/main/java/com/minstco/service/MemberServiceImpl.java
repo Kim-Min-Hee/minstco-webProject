@@ -23,7 +23,7 @@ public class MemberServiceImpl implements MemberService {
 
     public int idCheck(MemberVO memberVO)throws Exception {
         System.out.println("service : "+memberVO.getId());
-       int result = memberDAO.idCheck(memberVO);
+        int result = memberDAO.idCheck(memberVO);
         System.out.println("service : "+result);
         return memberDAO.idCheck(memberVO);
     }

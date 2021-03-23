@@ -12,10 +12,10 @@ import java.util.List;
 public class MemberDAO {
 
     @Autowired
-   private SqlSession sqlSession;
+    private SqlSession sqlSession;
 
     public int insertMember(MemberVO memberVO) {
-         return sqlSession.insert("member.memberInsert",memberVO);
+        return sqlSession.insert("member.memberInsert",memberVO);
     }
 
     public int idCheck(MemberVO memberVO) throws Exception{

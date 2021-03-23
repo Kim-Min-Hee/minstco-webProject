@@ -29,9 +29,9 @@
                     <button class="idCheck" type="button" id="idCheck" onclick="fn_idCheck();">아이디 중복 검사</button>
                 </div>
             </div>
-<%--            <div class="join_button_wrap">--%>
-<%--                <button type="button" id="idCheck" name="idCheck" value="N" onclick="fn_idCheck()">중복</button>--%>
-<%--            </div>--%>
+            <%--            <div class="join_button_wrap">--%>
+            <%--                <button type="button" id="idCheck" name="idCheck" value="N" onclick="fn_idCheck()">중복</button>--%>
+            <%--            </div>--%>
             <div class="password_wrap">
                 <div class="password_name">비밀번호</div>
                 <div class="password_input_box">
@@ -70,15 +70,15 @@
             </div>
             <div class="gender_wrap">
                 <div class="gender_name">성별</div>
-                    <input type="radio"  name="gender" value="M" checked="checked">남
-                    <input type="radio"   name="gender" value="F">여
-                </div>
+                <input type="radio"  name="gender" value="M" checked="checked">남
+                <input type="radio"   name="gender" value="F">여
             </div>
+        </div>
         <div class="join_button_wrap">
             <input type="submit" class="join_button" id="join" value="가입하기" onclick=" return checkAll()">
         </div>
     </form>
-    </div>
+</div>
 </body>
 </html>
 

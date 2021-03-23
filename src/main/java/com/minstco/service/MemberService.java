@@ -9,15 +9,13 @@ import javax.servlet.http.HttpSession;
 public interface MemberService {
 
 
-   public MemberVO insertMember  (MemberVO memberVO) throws  Exception;
+    public MemberVO insertMember  (MemberVO memberVO) throws  Exception;
 
-  public int idCheck (MemberVO memberVO) throws Exception;
+    public int idCheck (MemberVO memberVO) throws Exception;
 
-   public boolean loginCheck(MemberVO memberVO, HttpSession session);
+    public boolean loginCheck(MemberVO memberVO, HttpSession session);
 
-   public MemberVO viewMember(MemberVO memberVO);
-
-
+    public MemberVO viewMember(MemberVO memberVO);
 
 
 }

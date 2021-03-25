@@ -44,8 +44,8 @@ function checkId(id) {
     }
     return true;
 }
-function fn_idCheck(id) {
-   // var id = document.getElementById('id').value;
+function fn_idCheck() {
+   var id = document.getElementById('id').value;
     $.ajax({
         url: "idCheck",
         type: "POST",

@@ -23,6 +23,17 @@ public class MemberDAO {
         return result;
     }
 
+    public boolean joinCheck(MemberVO memberVO) throws Exception{
+        boolean check = false;
+        int result = sqlSession.selectOne("member.joinCheck",memberVO);
+        if(result>0){
+            check= false;
+        }else{
+           check= true;
+        }
+        return check;
+    }
+
 
     public boolean loginCheck(MemberVO memberVO){
         String name= sqlSession.selectOne("member.loginCheck",memberVO);

@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpSession;
+import java.awt.*;
 
 
 @RequestMapping("/member/")
@@ -26,11 +27,21 @@ public class MemberController  {
         return modelAndView;
     }
 
+    //아이디 중복확인 요청
     @ResponseBody
     @RequestMapping(value = "idCheck" , method = RequestMethod.POST)
     public String idCheck (MemberVO memberVO) throws Exception {
         System.out.println("controller : "+memberVO.getId());
         int result =  memberService.idCheck(memberVO);
+        return String.valueOf(result);
+    }
+    @ResponseBody
+    @RequestMapping(value = "joinCheck" , method = RequestMethod.POST)
+    public String joinCheck (MemberVO memberVO) throws Exception {
+        System.out.println("controller : "+memberVO.getName());
+        System.out.println("controller : "+memberVO.getPhoneNumber());
+        boolean result =  memberService.joinCheck(memberVO);
+        //return String.valueOf(result);
         return String.valueOf(result);
     }
 

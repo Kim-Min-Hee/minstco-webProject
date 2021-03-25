@@ -28,6 +28,11 @@ public class MemberServiceImpl implements MemberService {
         return memberDAO.idCheck(memberVO);
     }
 
+    public boolean joinCheck (MemberVO memberVO) throws Exception{
+        System.out.println("service : "+memberVO.getName());
+        boolean result = memberDAO.joinCheck(memberVO);
+        return result;
+    }
 
 
     public boolean loginCheck(MemberVO memberVO, HttpSession session) {

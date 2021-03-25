@@ -6,9 +6,13 @@ function checkAll() {
     var phoneNumber = document.getElementById('phoneNumber').value;
     var email = document.getElementById('email').value;
     var memberForm = document.getElementById('memberForm');
-    if (!checkId(id) && !fn_idCheck()) {
+    if (!checkId(id)) {
         return false;
-    } else if (!checkPassword(id, password, passwordCheck)) {
+    }
+    else if(!fn_idCheck()){
+        return false;
+    }
+    else if (!checkPassword(id, password, passwordCheck)) {
         return false;
     } else if (!checkName(name)) {
         return false;
@@ -16,7 +20,10 @@ function checkAll() {
         return false;
     } else if (!checkPhoneNumber(phoneNumber)) {
         return false;
-    } else {
+    }else if(!allCheck(name,phoneNumber)){
+        alert("@@@");
+        return false;
+    }else{
         memberForm.submit();
         return true;
     }
@@ -31,7 +38,6 @@ function checkExistData(value, dataName) {
 }
 
 function checkId(id) {
-
     var idEx = /^[a-zA-z0-9]{4,12}$/;
     if (!checkExistData(id, "아이디")) {
         return false;
@@ -42,30 +48,37 @@ function checkId(id) {
         id = "";
         return false;
     }
+
     return true;
 }
-function fn_idCheck() {
-   var id = document.getElementById('id').value;
-    $.ajax({
-        url: "idCheck",
-        type: "POST",
-        async: true,
-        contentType:"application/x-www-form-urlencoded; charset = utf-8",
-        dataType: "json",
-        data: {"id" : id},
-        success: function (data) {
-            if(data>0){
-                alert("이미 사용중인 아이디 입니다.");
-                console.log(id);
-            }else {
-                alert("사용 가능한 아이디 입니다.")
+function fn_idCheck(){
+        var check = false;
+        var id = document.getElementById('id').value;
+        $.ajax({
+            url: "idCheck",
+            type: "POST",
+            async: true,
+            contentType:"application/x-www-form-urlencoded; charset = utf-8",
+            dataType: "json",
+            data: {"id" : id},
+            success: function (data) {
+                if(data>0){
+                    alert("이미 사용중인 아이디 입니다.");
+                    console.log(id);
+                    check = false;
+                }else {
+                    alert("사용 가능한 아이디 입니다.")
+                    check = true;
+                }
+            },
+            error : function () {
+                alert("ajax failed");
+                check = false;
             }
-        },
-        error : function () {
-            alert("ajax failed");
-        }
-    });
-}
+        });
+
+        return check;
+    }
 
 
 
@@ -132,6 +145,41 @@ function checkPhoneNumber(phoneNumber) {
     }
     return true;
 }
+
+function allCheck(name,phoneNumber){
+var check = false;
+    $.ajax({
+        url: "joinCheck",
+        type: "POST",
+        async: true,
+        contentType:"application/x-www-form-urlencoded; charset = utf-8",
+        dataType: "json",
+        data: {
+            "name" : name,
+            "phoneNumber" : phoneNumber
+        },
+        success: function (data) {
+            if(data== true){
+                //alert("회원가입 가능 ");
+                console.log(id);
+                check = true;
+            }else {
+                alert("이미 회원 입니다.")
+                check = false;
+            }
+        },
+        error : function () {
+            alert("ajax failed");
+            check = false;
+        }
+    });
+        alert(check);
+        return check;
+}
+
+
+
+
 
 
 

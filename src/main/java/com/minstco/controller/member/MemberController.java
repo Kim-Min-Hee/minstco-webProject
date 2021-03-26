@@ -45,6 +45,7 @@ public class MemberController  {
         return String.valueOf(result);
     }
 
+
     @RequestMapping(value = "join",method = RequestMethod.POST)
     @ResponseBody
     public ModelAndView memberInsert(MemberVO memberVO) throws Exception {

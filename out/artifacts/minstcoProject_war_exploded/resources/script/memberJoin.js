@@ -20,8 +20,7 @@ function checkAll() {
         return false;
     } else if (!checkPhoneNumber(phoneNumber)) {
         return false;
-    }else if(!allCheck(name,phoneNumber)){
-        alert("@@@");
+    }else if(!allCheck(id,name,phoneNumber)){
         return false;
     }else{
         memberForm.submit();
@@ -52,8 +51,7 @@ function checkId(id) {
     return true;
 }
 function fn_idCheck(){
-        var check = false;
-        var id = document.getElementById('id').value;
+    var id = document.getElementById('id').value;
         $.ajax({
             url: "idCheck",
             type: "POST",
@@ -65,19 +63,16 @@ function fn_idCheck(){
                 if(data>0){
                     alert("이미 사용중인 아이디 입니다.");
                     console.log(id);
-                    check = false;
                 }else {
                     alert("사용 가능한 아이디 입니다.")
-                    check = true;
+
                 }
             },
             error : function () {
                 alert("ajax failed");
-                check = false;
             }
         });
-
-        return check;
+            return true;
     }
 
 
@@ -146,35 +141,39 @@ function checkPhoneNumber(phoneNumber) {
     return true;
 }
 
-function allCheck(name,phoneNumber){
-var check = false;
-    $.ajax({
-        url: "joinCheck",
-        type: "POST",
-        async: true,
-        contentType:"application/x-www-form-urlencoded; charset = utf-8",
-        dataType: "json",
-        data: {
-            "name" : name,
-            "phoneNumber" : phoneNumber
-        },
-        success: function (data) {
-            if(data== true){
-                //alert("회원가입 가능 ");
-                console.log(id);
-                check = true;
-            }else {
-                alert("이미 회원 입니다.")
-                check = false;
+function allCheck(id,name,phoneNumber){
+alert("abc");
+
+        //var check = false;
+        $.ajax({
+            url: "joinCheck",
+            type: "POST",
+            async: true,
+            contentType:"application/x-www-form-urlencoded; charset = utf-8",
+            dataType: "json",
+            data: {
+                "id" : id,
+                "name" : name,
+                "phoneNumber" : phoneNumber
+            },
+            success: function (data) {
+                if(data== true){
+                    alert("회원가입 가능 ");
+                    console.log(name);
+                    return true;
+                }else {
+                    alert("이미 회원 입니다.")
+                    return false;
+                }
+            },
+            error : function () {
+                alert("ajax failed");
+                return false;
             }
-        },
-        error : function () {
-            alert("ajax failed");
-            check = false;
-        }
-    });
-        alert(check);
-        return check;
+        });
+
+        // alert(check);
+        // return check;
 }
 
 

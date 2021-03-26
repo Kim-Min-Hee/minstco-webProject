@@ -7,6 +7,7 @@ import com.minstco.vo.MemberVO;
 
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @Repository
 public class MemberDAO {
@@ -29,7 +30,7 @@ public class MemberDAO {
         if(result>0){
             check= false;
         }else{
-           check= true;
+            check= true;
         }
         return check;
     }

@@ -1,5 +1,6 @@
 package com.minstco.controller.member;
 
+import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import com.minstco.service.MemberService;
 import com.minstco.vo.LoginVO;
@@ -10,6 +11,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpSession;
 import java.awt.*;
+import java.util.Map;
 
 
 @RequestMapping("/member/")
@@ -30,11 +32,30 @@ public class MemberController  {
     //아이디 중복확인 요청
     @ResponseBody
     @RequestMapping(value = "idCheck" , method = RequestMethod.POST)
-    public String idCheck (MemberVO memberVO) throws Exception {
-        System.out.println("controller : "+memberVO.getId());
-        int result =  memberService.idCheck(memberVO);
-        return String.valueOf(result);
+    public String idCheck (@RequestBody Map<String,Object> map) throws Exception {
+        for(String key : map.keySet()) {
+            System.out.println("map value :: " + map.get(key)); //map.get("id")
+        }
+        JSONObject jsonobj = new JSONObject(map);
+        try{
+            boolean idchk = memberService.idCheck(map);
+            jsonobj.put("status","success");
+            if(idchk){
+                jsonobj.put("result","success");
+                jsonobj.put("message","사용 가능함 id 입니다.");
+            }else{
+                jsonobj.put("result","failed");
+                jsonobj.put("message","이미 존재하는 id 입니다.");
+            }
+        }catch (Exception e){
+            jsonobj.put("status","failed");
+            jsonobj.put("message",e.getMessage());
+        }
+
+        //jsonobj = memberService.idCheck(map);
+        return jsonobj.toString();
     }
+
     @ResponseBody
     @RequestMapping(value = "joinCheck" , method = RequestMethod.POST)
     public String joinCheck (MemberVO memberVO) throws Exception {

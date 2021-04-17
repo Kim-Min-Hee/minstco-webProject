@@ -21,11 +21,14 @@ function checkAll() {
     } else if (!checkPhoneNumber(phoneNumber)) {
         return false;
     }else if(!allCheck(id,name,phoneNumber)){
+        console.log('allcheck');
         return false;
     }else{
+        console.log('before summit');
         memberForm.submit();
         return true;
     }
+    console.log('test1');
 }
 
 function checkExistData(value, dataName) {
@@ -51,21 +54,27 @@ function checkId(id) {
     return true;
 }
 function fn_idCheck(){
+
     var id = document.getElementById('id').value;
         $.ajax({
             url: "idCheck",
             type: "POST",
             async: true,
-            contentType:"application/x-www-form-urlencoded; charset = utf-8",
+            contentType:"application/json",
             dataType: "json",
-            data: {"id" : id},
+            data: JSON.stringify({"id" : id}),
             success: function (data) {
-                if(data>0){
-                    alert("이미 사용중인 아이디 입니다.");
-                    console.log(id);
-                }else {
-                    alert("사용 가능한 아이디 입니다.")
-
+                if(data){
+                    console.log('data',data);
+                    if(data.status==='success'){
+                        if(data.result==='success'){
+                            alert(data.message);
+                        }else{
+                            alert(data.message);
+                        }
+                    }else{
+                        alert(data.message);
+                    }
                 }
             },
             error : function () {
@@ -163,12 +172,10 @@ alert("abc");
                     return true;
                 }else {
                     alert("이미 회원 입니다.")
-                    return false;
                 }
             },
             error : function () {
                 alert("ajax failed");
-                return false;
             }
         });
 

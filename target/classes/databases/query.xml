@@ -9,8 +9,8 @@
         values('${id}','${password}','${name}','${address}','${phoneNumber}','${email}','${gender}','C','${0.05}','${0}','${0}',now());
     </insert>
 
-    <select id="idCheck"  resultType="int">
-        SELECT COUNT(*)
+    <select id="idCheck"  parameterType="map" resultType="map">
+        SELECT id
         FROM members
         WHERE id = #{id}
     </select>

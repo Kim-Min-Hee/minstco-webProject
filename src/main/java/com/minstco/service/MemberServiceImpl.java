@@ -7,6 +7,8 @@ import org.springframework.stereotype.Service;
 import com.minstco.vo.MemberVO;
 
 import javax.servlet.http.HttpSession;
+import java.util.List;
+import java.util.Map;
 
 @Service
 public class MemberServiceImpl implements MemberService {
@@ -21,11 +23,18 @@ public class MemberServiceImpl implements MemberService {
         return memberVO;
     }
 
-    public int idCheck(MemberVO memberVO)throws Exception {
-        System.out.println("service : "+memberVO.getId());
-        int result = memberDAO.idCheck(memberVO);
-        System.out.println("service : "+result);
-        return memberDAO.idCheck(memberVO);
+    public boolean idCheck(Map<String,Object> map)throws Exception {
+        //int result = memberDAO.idCheck(memberVO);
+        boolean idchk = false;
+        List list = memberDAO.idCheck(map);
+        if(list.size()>0) {
+            //id 존재
+            idchk = false;
+        }else{
+            idchk = true;
+        }
+        //System.out.println("service : "+result);
+        return idchk;
     }
 
     public boolean joinCheck (MemberVO memberVO) throws Exception{

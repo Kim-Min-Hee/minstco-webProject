@@ -5,6 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import com.minstco.vo.MemberVO;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -19,9 +20,18 @@ public class MemberDAO {
         return sqlSession.insert("member.memberInsert",memberVO);
     }
 
-    public int idCheck(MemberVO memberVO) throws Exception{
-        int result = sqlSession.selectOne("member.idCheck",memberVO);
-        return result;
+    public List<Map<String,Object>> idCheck(Map<String,Object> map) throws Exception{
+        //int result = sqlSession.selectOne("member.idCheck",memberVO);
+        //sqlSession.select("member.idCheck",map);
+        List<Map<String,Object>> list = new ArrayList();
+        list = sqlSession.selectList("member.idCheck", map);
+
+        for(Map<String,Object> map2 : list){
+            System.out.println("select value :: "+map2);
+        }
+
+        System.out.println(map);
+        return list;
     }
 
     public boolean joinCheck(MemberVO memberVO) throws Exception{

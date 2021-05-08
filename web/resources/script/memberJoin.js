@@ -151,9 +151,7 @@ function checkPhoneNumber(phoneNumber) {
 }
 
 function allCheck(id,name,phoneNumber){
-alert("abc");
 
-        //var check = false;
         $.ajax({
             url: "joinCheck",
             type: "POST",
@@ -179,8 +177,6 @@ alert("abc");
             }
         });
 
-        // alert(check);
-        // return check;
 }
 
 

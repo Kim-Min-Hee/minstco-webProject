@@ -40,6 +40,7 @@ public class MemberServiceImpl implements MemberService {
     public boolean joinCheck (MemberVO memberVO) throws Exception{
         System.out.println("service : "+memberVO.getName());
         boolean result = memberDAO.joinCheck(memberVO);
+        System.out.println(result);
         return result;
     }
 

@@ -235,68 +235,11 @@
       <change beforePath="$PROJECT_DIR$/../minstco/src/app/Minstco.java" beforeDir="false" afterPath="$PROJECT_DIR$/../minstco/src/app/Minstco.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../minstco/src/service/Registration.java" beforeDir="false" afterPath="$PROJECT_DIR$/../minstco/src/service/Registration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../minstco/src/vo/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/../minstco/src/vo/Member.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/minstcoProject_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/minstcoProject_war_exploded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/minstcoProject_war_exploded/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/minstcoProject_war_exploded/WEB-INF/applicationContext.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/minstcoProject_war_exploded/WEB-INF/classes/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/minstcoProject_war_exploded/WEB-INF/classes/com/minstco/controller/MainController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/minstcoProject_war_exploded/WEB-INF/classes/com/minstco/controller/member/MemberController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/minstcoProject_war_exploded/WEB-INF/classes/com/minstco/dao/MemberDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/minstcoProject_war_exploded/WEB-INF/classes/com/minstco/service/MemberService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/minstcoProject_war_exploded/WEB-INF/classes/com/minstco/service/MemberServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/minstcoProject_war_exploded/WEB-INF/classes/com/minstco/vo/LoginVO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/minstcoProject_war_exploded/WEB-INF/classes/com/minstco/vo/MemberVO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/minstcoProject_war_exploded/WEB-INF/classes/controller/member/MemberInsertController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/minstcoProject_war_exploded/WEB-INF/classes/databases/mybatis-config.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/minstcoProject_war_exploded/WEB-INF/classes/databases/query.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/minstcoProject_war_exploded/WEB-INF/classes/http_code.jquery.com_jquery-2.1.1.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/minstcoProject_war_exploded/WEB-INF/dispatcher-servlet.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/minstcoProject_war_exploded/WEB-INF/lib/aopalliance-1.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/minstcoProject_war_exploded/WEB-INF/lib/commons-logging-1.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/minstcoProject_war_exploded/WEB-INF/lib/jackson-databind-2.9.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/minstcoProject_war_exploded/WEB-INF/lib/mariadb-java-client-2.6.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/minstcoProject_war_exploded/WEB-INF/lib/mybatis-3.2.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/minstcoProject_war_exploded/WEB-INF/lib/mybatis-spring-1.2.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/minstcoProject_war_exploded/WEB-INF/lib/servlet-api.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/minstcoProject_war_exploded/WEB-INF/lib/spring-aop-5.2.3.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/minstcoProject_war_exploded/WEB-INF/lib/spring-aspects-5.2.3.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/minstcoProject_war_exploded/WEB-INF/lib/spring-beans-5.2.3.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/minstcoProject_war_exploded/WEB-INF/lib/spring-context-5.2.3.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/minstcoProject_war_exploded/WEB-INF/lib/spring-context-support-5.2.3.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/minstcoProject_war_exploded/WEB-INF/lib/spring-core-5.2.3.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/minstcoProject_war_exploded/WEB-INF/lib/spring-expression-5.2.3.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/minstcoProject_war_exploded/WEB-INF/lib/spring-instrument-5.2.3.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/minstcoProject_war_exploded/WEB-INF/lib/spring-jdbc-5.2.3.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/minstcoProject_war_exploded/WEB-INF/lib/spring-jms-5.2.3.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/minstcoProject_war_exploded/WEB-INF/lib/spring-messaging-5.2.3.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/minstcoProject_war_exploded/WEB-INF/lib/spring-orm-5.2.3.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/minstcoProject_war_exploded/WEB-INF/lib/spring-oxm-5.2.3.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/minstcoProject_war_exploded/WEB-INF/lib/spring-test-5.2.3.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/minstcoProject_war_exploded/WEB-INF/lib/spring-tx-4.3.18.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/minstcoProject_war_exploded/WEB-INF/lib/spring-tx-5.2.3.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/minstcoProject_war_exploded/WEB-INF/lib/spring-web-5.2.3.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/minstcoProject_war_exploded/WEB-INF/lib/spring-webmvc-5.2.3.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/minstcoProject_war_exploded/WEB-INF/views/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/minstcoProject_war_exploded/WEB-INF/views/main.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/minstcoProject_war_exploded/WEB-INF/views/member/join.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/minstcoProject_war_exploded/WEB-INF/views/member/joinCheck.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/minstcoProject_war_exploded/WEB-INF/views/member/login.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/minstcoProject_war_exploded/WEB-INF/views/member/loginTest.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/minstcoProject_war_exploded/WEB-INF/views/member/memberCheck.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/minstcoProject_war_exploded/WEB-INF/views/menu.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/minstcoProject_war_exploded/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/minstcoProject_war_exploded/resources/css/main.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/minstcoProject_war_exploded/resources/css/memberjoin.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/minstcoProject_war_exploded/resources/script/login.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/minstcoProject_war_exploded/resources/script/memberJoin.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/minstcoProject_war_exploded/WEB-INF/views/member/join.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/minstcoProject_war_exploded/WEB-INF/views/member/join.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/minstco/controller/member/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/minstco/controller/member/MemberController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/minstco/dao/MemberDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/minstco/dao/MemberDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/minstco/service/MemberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/minstco/service/MemberService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/minstco/service/MemberServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/minstco/service/MemberServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/databases/query.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/databases/query.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/minstco/controller/member/MemberController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/minstco/controller/member/MemberController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/views/member/join.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/views/member/join.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/resources/script/memberJoin.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/resources/script/memberJoin.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../untitled/untitled.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../untitled/web/WEB-INF/applicationContext.xml" beforeDir="false" />
@@ -516,7 +459,9 @@
       <workItem from="1617424810977" duration="936000" />
       <workItem from="1617435578397" duration="426000" />
       <workItem from="1617436026263" duration="813000" />
-      <workItem from="1618627218149" duration="6592000" />
+      <workItem from="1618627218149" duration="6686000" />
+      <workItem from="1619093309789" duration="1713000" />
+      <workItem from="1620444578100" duration="1316000" />
     </task>
     <servers />
   </component>
@@ -596,54 +541,54 @@
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
     <state x="634" y="323" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.25.1792.1095@0.25.1792.1095" timestamp="1618633917155" />
-    <state width="1252" height="292" key="GridCell.Tab.0.bottom" timestamp="1618635157712">
+    <state width="1252" height="292" key="GridCell.Tab.0.bottom" timestamp="1620446067508">
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
-    <state width="1252" height="292" key="GridCell.Tab.0.bottom/0.25.1792.1095@0.25.1792.1095" timestamp="1618635157712" />
-    <state width="1252" height="292" key="GridCell.Tab.0.center" timestamp="1618635157711">
+    <state width="1252" height="292" key="GridCell.Tab.0.bottom/0.25.1792.1095@0.25.1792.1095" timestamp="1620446067508" />
+    <state width="1252" height="292" key="GridCell.Tab.0.center" timestamp="1620446067508">
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
-    <state width="1252" height="292" key="GridCell.Tab.0.center/0.25.1792.1095@0.25.1792.1095" timestamp="1618635157711" />
-    <state width="1252" height="292" key="GridCell.Tab.0.left" timestamp="1618635157711">
+    <state width="1252" height="292" key="GridCell.Tab.0.center/0.25.1792.1095@0.25.1792.1095" timestamp="1620446067508" />
+    <state width="1252" height="292" key="GridCell.Tab.0.left" timestamp="1620446067507">
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
-    <state width="1252" height="292" key="GridCell.Tab.0.left/0.25.1792.1095@0.25.1792.1095" timestamp="1618635157711" />
-    <state width="1252" height="292" key="GridCell.Tab.0.right" timestamp="1618635157712">
+    <state width="1252" height="292" key="GridCell.Tab.0.left/0.25.1792.1095@0.25.1792.1095" timestamp="1620446067507" />
+    <state width="1252" height="292" key="GridCell.Tab.0.right" timestamp="1620446067508">
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
-    <state width="1252" height="292" key="GridCell.Tab.0.right/0.25.1792.1095@0.25.1792.1095" timestamp="1618635157712" />
-    <state width="1252" height="292" key="GridCell.Tab.1.bottom" timestamp="1618635157616">
+    <state width="1252" height="292" key="GridCell.Tab.0.right/0.25.1792.1095@0.25.1792.1095" timestamp="1620446067508" />
+    <state width="1252" height="292" key="GridCell.Tab.1.bottom" timestamp="1620446067509">
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
-    <state width="1252" height="292" key="GridCell.Tab.1.bottom/0.25.1792.1095@0.25.1792.1095" timestamp="1618635157616" />
-    <state width="1252" height="292" key="GridCell.Tab.1.center" timestamp="1618635157615">
+    <state width="1252" height="292" key="GridCell.Tab.1.bottom/0.25.1792.1095@0.25.1792.1095" timestamp="1620446067509" />
+    <state width="1252" height="292" key="GridCell.Tab.1.center" timestamp="1620446067509">
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
-    <state width="1252" height="292" key="GridCell.Tab.1.center/0.25.1792.1095@0.25.1792.1095" timestamp="1618635157615" />
-    <state width="1252" height="292" key="GridCell.Tab.1.left" timestamp="1618635157615">
+    <state width="1252" height="292" key="GridCell.Tab.1.center/0.25.1792.1095@0.25.1792.1095" timestamp="1620446067509" />
+    <state width="1252" height="292" key="GridCell.Tab.1.left" timestamp="1620446067509">
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
-    <state width="1252" height="292" key="GridCell.Tab.1.left/0.25.1792.1095@0.25.1792.1095" timestamp="1618635157615" />
-    <state width="1252" height="292" key="GridCell.Tab.1.right" timestamp="1618635157616">
+    <state width="1252" height="292" key="GridCell.Tab.1.left/0.25.1792.1095@0.25.1792.1095" timestamp="1620446067509" />
+    <state width="1252" height="292" key="GridCell.Tab.1.right" timestamp="1620446067509">
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
-    <state width="1252" height="292" key="GridCell.Tab.1.right/0.25.1792.1095@0.25.1792.1095" timestamp="1618635157616" />
-    <state width="1252" height="292" key="GridCell.Tab.2.bottom" timestamp="1618635157617">
+    <state width="1252" height="292" key="GridCell.Tab.1.right/0.25.1792.1095@0.25.1792.1095" timestamp="1620446067509" />
+    <state width="1252" height="292" key="GridCell.Tab.2.bottom" timestamp="1620446067510">
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
-    <state width="1252" height="292" key="GridCell.Tab.2.bottom/0.25.1792.1095@0.25.1792.1095" timestamp="1618635157617" />
-    <state width="1252" height="292" key="GridCell.Tab.2.center" timestamp="1618635157616">
+    <state width="1252" height="292" key="GridCell.Tab.2.bottom/0.25.1792.1095@0.25.1792.1095" timestamp="1620446067510" />
+    <state width="1252" height="292" key="GridCell.Tab.2.center" timestamp="1620446067510">
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
-    <state width="1252" height="292" key="GridCell.Tab.2.center/0.25.1792.1095@0.25.1792.1095" timestamp="1618635157616" />
-    <state width="1252" height="292" key="GridCell.Tab.2.left" timestamp="1618635157616">
+    <state width="1252" height="292" key="GridCell.Tab.2.center/0.25.1792.1095@0.25.1792.1095" timestamp="1620446067510" />
+    <state width="1252" height="292" key="GridCell.Tab.2.left" timestamp="1620446067510">
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
-    <state width="1252" height="292" key="GridCell.Tab.2.left/0.25.1792.1095@0.25.1792.1095" timestamp="1618635157616" />
-    <state width="1252" height="292" key="GridCell.Tab.2.right" timestamp="1618635157616">
+    <state width="1252" height="292" key="GridCell.Tab.2.left/0.25.1792.1095@0.25.1792.1095" timestamp="1620446067510" />
+    <state width="1252" height="292" key="GridCell.Tab.2.right" timestamp="1620446067510">
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
-    <state width="1252" height="292" key="GridCell.Tab.2.right/0.25.1792.1095@0.25.1792.1095" timestamp="1618635157616" />
+    <state width="1252" height="292" key="GridCell.Tab.2.right/0.25.1792.1095@0.25.1792.1095" timestamp="1620446067510" />
     <state width="1204" height="259" key="GridCell.Tab.3.bottom" timestamp="1615365476943">
       <screen x="0" y="25" width="1792" height="1095" />
     </state>

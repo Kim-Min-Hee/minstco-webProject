@@ -75,12 +75,13 @@ public class MemberController  {
             modelAndView.addObject("result","success");
             modelAndView.addObject("message","가입 축하드립니다.");
             modelAndView.addObject("data",memberVO.getName());
+            modelAndView.setViewName("main");
         }catch (Exception e){
             modelAndView.addObject("result","failed");
             modelAndView.addObject("message","가입이 실패하셨습니다.");
+
         }
 
-        modelAndView.setViewName("main");
         return modelAndView;
     }
 
@@ -109,6 +110,7 @@ public class MemberController  {
     public String loginInsert(LoginVO loginVO) throws Exception{
         return "id : "+loginVO.getId()+"\t"+"password : "+loginVO.getPassword();
     }
+
 
 
 

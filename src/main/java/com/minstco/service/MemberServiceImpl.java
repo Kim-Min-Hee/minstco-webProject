@@ -16,12 +16,12 @@ public class MemberServiceImpl implements MemberService {
     @Autowired
     MemberDAO memberDAO;
 
-    public MemberVO insertMember(MemberVO memberVO) throws Exception {
-        //db와 연결 시작. (insert)
-        memberDAO.insertMember(memberVO);
-
-        return memberVO;
-    }
+//    public MemberVO insertMember(MemberVO memberVO) throws Exception {
+//        //db와 연결 시작. (insert)
+//        memberDAO.insertMember(memberVO);
+//
+//        return memberVO;
+//    }
 
     public boolean idCheck(Map<String,Object> map)throws Exception {
         //int result = memberDAO.idCheck(memberVO);

@@ -75,7 +75,7 @@
             </div>
         </div>
         <div class="join_button_wrap">
-            <input type="button" class="join_button" id="join" value="가입하기" onclick=" return checkAll()">
+        <button type="button" class="join_button" id="join" onclick=" return checkAll()">가입하기</button>
         </div>
     </form>
 </div>

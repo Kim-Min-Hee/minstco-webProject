@@ -8,6 +8,7 @@ import com.minstco.vo.MemberVO;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
+import sun.lwawt.macosx.CSystemTray;
 
 import javax.servlet.http.HttpSession;
 import java.awt.*;
@@ -56,22 +57,27 @@ public class MemberController  {
         return jsonobj.toString();
     }
 
-    @ResponseBody
-    @RequestMapping(value = "joinCheck" , method = RequestMethod.POST)
-    public String joinCheck (MemberVO memberVO) throws Exception {
-        System.out.println("controller : "+memberVO.getName());
-        System.out.println("controller : "+memberVO.getPhoneNumber());
-        boolean result =  memberService.joinCheck(memberVO);
-        //return String.valueOf(result);
-        return String.valueOf(result);
-    }
+//    @ResponseBody
+//    @RequestMapping(value = "joinCheck" , method = RequestMethod.POST)
+//    public String joinCheck (MemberVO memberVO) throws Exception {
+//        System.out.println("controller : "+memberVO.getName());
+//        System.out.println("controller : "+memberVO.getPhoneNumber());
+//        boolean result =  memberService.joinCheck(memberVO);
+//        return String.valueOf(result);
+//    }
 
 
     @RequestMapping(value = "join",method = RequestMethod.POST)
     @ResponseBody
-    public ModelAndView memberInsert(MemberVO memberVO) throws Exception {
+    public String memberJoin(MemberVO memberVO) throws Exception {
+
+        System.out.println("controller : "+memberVO.getName());
+        System.out.println("controller : "+memberVO.getPhoneNumber());
+        boolean result =  memberService.joinCheck(memberVO);
+        System.out.println(result+"****");
+
         try {
-            memberService.insertMember(memberVO);
+            memberService.joinCheck(memberVO);
             modelAndView.addObject("result","success");
             modelAndView.addObject("message","가입 축하드립니다.");
             modelAndView.addObject("data",memberVO.getName());
@@ -82,7 +88,7 @@ public class MemberController  {
 
         }
 
-        return modelAndView;
+        return String.valueOf(result);
     }
 
     @RequestMapping(value = "login",method = RequestMethod.GET)

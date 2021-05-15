@@ -17,7 +17,7 @@
 
     <select id="joinCheck" resultType="int" >
         SELECT COUNT(*) FROM members
-        WHERE id = #{id} AND name = #{name } AND phoneNumber = #{phoneNumber}
+        WHERE id = #{id} OR name = #{name } OR phoneNumber = #{phoneNumber}
     </select>
 
 

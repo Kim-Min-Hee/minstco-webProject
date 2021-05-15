@@ -10,7 +10,7 @@ import java.util.Map;
 public interface MemberService {
 
 
-    public MemberVO insertMember  (MemberVO memberVO) throws  Exception;
+   // public MemberVO insertMember  (MemberVO memberVO) throws  Exception;
 
     public boolean joinCheck (MemberVO memberVO) throws Exception;
 

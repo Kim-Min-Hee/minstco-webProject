@@ -1,3 +1,5 @@
+var idCheck = false;
+
 function checkAll() {
     var id = document.getElementById('id').value;
     var password = document.getElementById('password').value;
@@ -6,29 +8,40 @@ function checkAll() {
     var phoneNumber = document.getElementById('phoneNumber').value;
     var email = document.getElementById('email').value;
     var memberForm = document.getElementById('memberForm');
+
     if (!checkId(id)) {
         return false;
     }
-    else if(!fn_idCheck()){
+
+    console.log('id check :: ',idCheck);
+    if(!idCheck){
+        alert('아이디가 이미 존재합니다.')
+    }else {
+        alert('사용 가능한 아이디 입니다.')
+    }
+
+    if (!checkPassword(id, password, passwordCheck)) {
         return false;
     }
-    else if (!checkPassword(id, password, passwordCheck)) {
+    if (!checkName(name)) {
         return false;
-    } else if (!checkName(name)) {
+    }
+    if (!checkEmail(email)) {
         return false;
-    } else if (!checkEmail(email)) {
+    }
+    if (!checkPhoneNumber(phoneNumber)) {
         return false;
-    } else if (!checkPhoneNumber(phoneNumber)) {
-        return false;
-    }else if(!allCheck(id,name,phoneNumber)){
+    }
+    if(!allCheck(id,name,phoneNumber)){
         console.log('allcheck');
         return false;
-    }else{
-        console.log('before summit');
-        memberForm.submit();
-        return true;
     }
-    console.log('test1');
+
+        // console.log('before summit');
+        // memberForm.submit();
+        return true;
+
+    //console.log('test1');
 }
 
 function checkExistData(value, dataName) {
@@ -53,6 +66,7 @@ function checkId(id) {
 
     return true;
 }
+
 function fn_idCheck(){
 
     var id = document.getElementById('id').value;
@@ -69,8 +83,10 @@ function fn_idCheck(){
                     if(data.status==='success'){
                         if(data.result==='success'){
                             alert(data.message);
+                            idCheck = true;
                         }else{
                             alert(data.message);
+                            idCheck = false;
                         }
                     }else{
                         alert(data.message);
@@ -81,7 +97,7 @@ function fn_idCheck(){
                 alert("ajax failed");
             }
         });
-            return true;
+           // return true;
     }
 
 
@@ -152,8 +168,9 @@ function checkPhoneNumber(phoneNumber) {
 
 function allCheck(id,name,phoneNumber){
 
+    if(idCheck){
         $.ajax({
-            url: "joinCheck",
+            url: "join",
             type: "POST",
             async: true,
             contentType:"application/x-www-form-urlencoded; charset = utf-8",
@@ -167,6 +184,7 @@ function allCheck(id,name,phoneNumber){
                 if(data== true){
                     alert("회원가입 가능 ");
                     console.log(name);
+                    location.href="../main.do";
                     return true;
                 }else {
                     alert("이미 회원 입니다.")
@@ -176,6 +194,9 @@ function allCheck(id,name,phoneNumber){
                 alert("ajax failed");
             }
         });
+    }
+
+    return true;
 
 }
 

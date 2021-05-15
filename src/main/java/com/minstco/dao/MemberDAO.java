@@ -16,9 +16,9 @@ public class MemberDAO {
     @Autowired
     private SqlSession sqlSession;
 
-    public int insertMember(MemberVO memberVO) {
-        return sqlSession.insert("member.memberInsert",memberVO);
-    }
+//    public int insertMember(MemberVO memberVO) {
+//        return sqlSession.insert("member.memberInsert",memberVO);
+//    }
 
     public List<Map<String,Object>> idCheck(Map<String,Object> map) throws Exception{
         //int result = sqlSession.selectOne("member.idCheck",memberVO);
@@ -37,11 +37,16 @@ public class MemberDAO {
     public boolean joinCheck(MemberVO memberVO) throws Exception{
         boolean check = false;
         int result = sqlSession.selectOne("member.joinCheck",memberVO);
+        System.out.println("result :: "+result);
         if(result>0){
             check= false;
         }else{
             check= true;
+            sqlSession.insert("member.memberInsert",memberVO);
+            System.out.println(memberVO.getId()+"!!!!");
+
         }
+        System.out.println(check+"@@@@");
         return check;
     }
 
